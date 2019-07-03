@@ -1,46 +1,64 @@
-/* body{
-    background-image: url("https://www.icccricketworldcupschedule.com/wp-content/uploads/2019/02/ICC-Cricket-World-Cup-2019.jpg")
-} */
+
 .container{
     display:flex;
     justify-content: space-around;
     margin:40px auto;
     height:100%;
 }
-.choosePool{
-    text-align: center;
-    font-weight: 800;
+div .header{
+    display: flex;
+    margin:20px auto;
+    width:95%;
+  }
+  .line1{
+    background-color: #490f37;
+    width:126%;
+    height:5px;
+    margin:28px 0px;
+  }
+  .entry{
+      display:flex;
+  }
+  .fa-hand-point-right{
+      color: green;
+      
+  }
+  .choosePool{
+    width:68%;
+    height:10%;
     font-size:30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:11px 0px;
     letter-spacing: 2px;
-}
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 .pool_card{
     height:300px;
     width:25%;
-    
-    display: flex;
+        display: flex;
     flex-direction:column;
     background-color: white;
     align-items:center;
     box-shadow: 5px 10px 8px #888888;
+   
     
 }
+
 div .pool_card:hover{
     transform: scale(1.1);
    /* transition-delay: 0.5s; */
    transition-duration: .6s;
 }
 .join-pool-button{
-    background-color:green;
+    background-color:#6c2a57;
     color:white;
     border:2px solid white;
     height:15%;
     width:55%;
-    padding:10px;
-    margin:25px;
+    padding:5%;
+    margin:10% auto;
 }
 .total-prize-pool,.pool-entry{
-    font-size:20px;
+    font-size:18px;
     font-weight: 100;
     padding:2px;
     margin:5px;

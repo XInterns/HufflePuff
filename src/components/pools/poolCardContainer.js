@@ -1,10 +1,16 @@
 import React from 'react';
+import PoolCard from './poolCard';
 
-import PoolCard from './Pool_card';
-const ContainerChoosePool=()=>{
+
+
+const PoolCardContainer=()=>{
    return( 
    <div>
-   <div className="choosePool"> STEP 1 : CHOOSE POOL</div>
+         <div className="header"> 
+         <div className="choosePool"> STEP 1 : CHOOSE POOL</div>
+         <div className="line1"></div>
+         </div>
+  
    <div className="container">
     <PoolCard total_price="100" pool_price="10"/>
     <PoolCard total_price="200" pool_price="15"/>
@@ -14,4 +20,4 @@ const ContainerChoosePool=()=>{
    );
 }
 
-export default ContainerChoosePool;
+export default PoolCardContainer;

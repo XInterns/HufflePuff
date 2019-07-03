@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import './GamePool.css';
-import data from './data/data'
-import GameCard from './GameCard';
+import './contests.css';
+import data from '../../data/data'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-// import ContainerChoosePool from './Container_ChoosePool';
-// import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import ContestCard from './contestCard';
 
 
-class GamePool extends Component {
+class ContestCardContainer extends Component {
 
   constructor(props){
     super(props);
@@ -41,13 +40,12 @@ class GamePool extends Component {
      
       <div className='game-container'>
 
-  {/* <Switch>
-  <Route path="/CricketPools" component={ContainerChoosePool}/>
-  </Switch> */}
-   
+  
       <div className="page">
-          <section className="chooseGame">
-            STEP 1 : Choose Game
+          <section className="header" >
+            <div className="line"></div>
+             <div className="chooseGame">CHOOSE GAME</div>
+             <div className="line"></div>
           </section>
       <div className="games">
       <button 
@@ -56,7 +54,7 @@ class GamePool extends Component {
         disabled={game.index === 0}
       ><FontAwesomeIcon icon={faChevronLeft} /></button>
         
-          <GameCard game={game} />
+          <ContestCard game={game} />
        
       <button 
         className="next"
@@ -71,4 +69,4 @@ class GamePool extends Component {
   }
 }
 
-export default GamePool;
+export default ContestCardContainer;

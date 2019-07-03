@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-// import './App.css';
+import './App.css';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
 
-import ContainerChoosePool from './Container_ChoosePool';
-import GamePool from './GamePool';
+import Contests from './components/contests';
+import pools from './components/pools';
 
 class App extends Component {
 
@@ -11,8 +11,8 @@ class App extends Component {
     return(
       <Router>
         <Switch>
-          <Route path="/CricketPools" component={ContainerChoosePool}/>
-          <Route path="/" exact component={GamePool}/>
+          <Route path="/CricketPool1" component={pools}/>
+          <Route path="/" exact component={Contests}/>
           
         </Switch>
       </Router>

@@ -3,6 +3,7 @@ import injectSheet from 'react-jss';
 import Modal from './SignIn/Modal';
 import styles from './SignIn/ModalStyles';
 import Auth from './SignIn/Auth';
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
 class ModalLauncher extends Component {
     constructor(props) {
@@ -30,7 +31,7 @@ class ModalLauncher extends Component {
             </button>  
             {showModal && 
             <Modal showModal onCloseRequest={() => this.handleToggleModal()}>
-                {this.children}
+              {console.log(classes)}
             </Modal>}
             </div>
         );

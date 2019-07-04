@@ -51,38 +51,35 @@ export default {
       },
     },
   
-    // The close button: absolute positioning on top left of the
+    // Close button: default absolute positioning on top left of the
     // browser window, white background square with a gray X.
-
-    // TODO
     closeButton: {
-      position: 'fixed',
+      position: 'relative',
       top: 0,
-      right: 0,
-      background: '#fff',
-      width: '2.5rem',
-      height: '2.5rem',
+      left: 248,
+      background: '#111',
+      width: '1rem',
+      height: '1rem',
       padding: 0,
       border: 0,
       cursor: 'pointer',
       outline: 0,
-      boxShadow: [0, 0, '0.625rem', 'rgba(0, 0, 0, 0.2)'],
   
       '&:before, &:after': {
         content: '""',
         position: 'absolute',
-        top: '1.2rem',
-        left: '0.25rem',
-        width: '2rem',
+        top: '0.5rem',
+        left: '0.08rem',
+        width: '1rem',
         height: '0.1rem',
-        backgroundColor: '#888',
+        backgroundColor: '#db4437',
       },
   
       '&:before': { transform: 'rotate(45deg)' },
       '&:after': { transform: 'rotate(-45deg)' },
   
       '&:hover:before, &:hover:after': {
-        backgroundColor: '#444',
+        backgroundColor: '#fff',
       },
     },
   };

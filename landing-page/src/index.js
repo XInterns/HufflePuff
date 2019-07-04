@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Auth from './SignIn/Auth';
 import * as serviceWorker from './serviceWorker';
 import ModalLauncher from './ModalLauncher';
 

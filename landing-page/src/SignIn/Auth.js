@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"; 
 import Modal from './Modal';
@@ -22,24 +21,26 @@ class Auth extends Component{
     ],
 
     callbacks: {
-      signInSuccess: () => false
+      signInSuccessWithAuthResult: () => false
     }
   }
 
   componentDidMount = () => {
     firebase.auth().onAuthStateChanged( (user) => {
-      this.setState({isSignedIn: !!user})
-
-      console.log(user);
+      this.setState({isSignedIn: !!user}, () => this.props.signinHandler(this.state.isSignedIn));
+      this.props.signinHandler(this.state.isSignedIn); 
+      // console.log(this.state.isSignedIn);
+      // callback not working!!
 
     })
   }
-
+  
   render() {
     return (
       <div className="Auth">
         {this.state.isSignedIn ? (
           <div>Signed In!!
+            {/* TODO: send img as a prop*/}
           <img alt="profile-pic" src={firebase.auth().currentUser.photoURL}/>
           </div>
         ):(

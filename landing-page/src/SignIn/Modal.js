@@ -12,6 +12,7 @@ class Modal extends Component {
     
         this.handleKeyUp = this.handleKeyUp.bind(this);
         this.handleOutsideClick = this.handleOutsideClick.bind(this);
+        this.closeOnSignin = this.closeOnSignin.bind(this);
       }
 
     componentDidMount() {
@@ -48,6 +49,12 @@ class Modal extends Component {
         }
       }
 
+      closeOnSignin(props){
+        if(this.props.isSignedIn)
+         this.props.onCloseRequest();
+      }
+
+
     render () { 
         const { onCloseRequest, children, classes, showModal } = this.props;
       
@@ -55,17 +62,16 @@ class Modal extends Component {
           <div className={classes.modalOverlay}>
             <div className={classes.modal} ref={node => (this.modal = node)}>
                 {/* <img src=""/> */}
-               <Heading />
-               <Auth/>
+                <button
+                className={classes.closeButton}
+                onClick={onCloseRequest}
+                />
               <div className={classes.modalContent}>
-                {children}
+                {/* {children} */}
+                <Heading />
+                <Auth signinHandler={this.closeOnSignin}/>
               </div>
             </div>
-      
-            <button
-              className={classes.closeButton}
-              onClick={onCloseRequest}
-            />
           </div>
         );
       }

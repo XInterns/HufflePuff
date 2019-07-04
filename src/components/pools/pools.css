@@ -20,6 +20,8 @@ div .header {
 }
 .fa-hand-point-right {
   color: green;
+  margin:12px;
+  font-size:25px;
 }
 .choosePool {
   width: 68%;
@@ -59,6 +61,7 @@ div .pool_card:hover {
   font-weight: 100;
   padding: 2px;
   margin: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .total {
   font-size: 50px;

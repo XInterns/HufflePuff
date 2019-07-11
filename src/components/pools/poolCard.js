@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoins, faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 
 const PoolCard = props => {
+
+  function handleClick(e){
+    console.log(e.target.value);
+  }
   return (
     <div className="pool_card">
       <span className="total-prize-pool">Prize Pool</span>
@@ -17,7 +21,7 @@ const PoolCard = props => {
         <FontAwesomeIcon icon={faHandPointRight} />{" "}
         <div className="pool-price">{props.pool_price}</div>
       </div>
-      <button className="join-pool-button">JOIN POOL</button>
+      <button className="join-pool-button" value={props.value} onClick={handleClick}>JOIN POOL</button>
     </div>
   );
 };

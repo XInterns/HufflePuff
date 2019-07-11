@@ -6,6 +6,7 @@ import "./App.css";
 import Contests from "./components/contests";
 import pools from "./components/pools";
 
+
 class App extends Component {
   render() {
     return (
@@ -13,8 +14,10 @@ class App extends Component {
         <Switch>
           <Route path="/CricketPool1" component={pools} />
           <Route path="/" exact component={Contests} />
+         
         </Switch>
       </Router>
+      
     );
   }
 }

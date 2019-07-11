@@ -1,7 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./QuizComponent/Styles.css";
 
-import App from './App';
+// import App from './App';
+import Quiz from './QuizComponent/Quiz';
+function App()
+{
+    return (
+        <div className = "App">
+            <Quiz />
+        </div>
+    )
+}
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

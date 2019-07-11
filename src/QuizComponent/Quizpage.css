@@ -1,0 +1,35 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    color: #f1f2f6;
+  }
+  body {
+    
+
+    background: #aa076b;
+    background: -webkit-linear-gradient(to right, #aa076b, #61045f); 
+    background: linear-gradient(to right, #aa076b, #bc85bb); 
+  }
+  
+  .result {
+    
+    
+    
+	  
+  }
+  
+  .options {
+    cursor: pointer;
+    border: 2px solid #6C2A57;
+    padding: 3px;
+  }
+  
+  .selected {
+    background: linear-gradient(to right, #74ebd5, #acb6e5) !important;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+

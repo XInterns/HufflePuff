@@ -78,7 +78,7 @@ class Quiz extends React.Component
         if(quizEnd)
         { 
             return(
-            <div>
+            <div className="result">
                 <h2>Game Over The Final Score Is {this.state.score * 10} </h2>
                 
             </div>
@@ -88,10 +88,11 @@ class Quiz extends React.Component
 
         return (
             <div className="App">
-                <h2>{questions}</h2>
                 <span>
                     {`Questions ${currentQuestion + 1} out of ${QuizData.length}`}
                 </span>
+                <h2>{questions}</h2>
+                
                     {options.map(option => (
                         <p
                         key={option.id}
@@ -102,6 +103,8 @@ class Quiz extends React.Component
                             {option}
                         </p>
                     ))}
+                    
+                    
                     { currentQuestion < QuizData.length -1 && (
                     <button className="ui inverted button" dsiabled ={this.state.disabled} onClick={this.nextQuestionHandler}>
                         Next

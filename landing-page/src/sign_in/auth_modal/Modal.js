@@ -4,7 +4,7 @@ import isNil from 'lodash/fp/isNil';
 import styles from './ModalStyles';
 import Heading from './Heading';
 import Auth from './Auth';
-
+import firebaseconfig from '../config/firebaseConfig'
 
 class Modal extends Component {
     constructor(props) {
@@ -56,7 +56,7 @@ class Modal extends Component {
 
 
     render () { 
-        const { onCloseRequest, children, classes, showModal } = this.props;
+        const { onCloseRequest, children, classes } = this.props;
       
         return (
           <div className={classes.modalOverlay}>
@@ -69,7 +69,7 @@ class Modal extends Component {
               <div className={classes.modalContent}>
                 {/* {children} */}
                 <Heading />
-                <Auth signinHandler={this.closeOnSignin}/>
+                <Auth/>
               </div>
             </div>
           </div>

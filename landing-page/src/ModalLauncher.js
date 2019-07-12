@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import injectSheet from 'react-jss';
-import Modal from './SignIn/Modal';
-import styles from './SignIn/ModalStyles';
-import Auth from './SignIn/Auth';
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import Modal from './sign_in/auth_modal/Modal';
+import styles from './sign_in/auth_modal/ModalStyles';
+import Auth from './sign_in/auth_modal/Auth';
+import Dashboard from './Dashboard';
+import { connect } from 'react-redux';
+
 
 class ModalLauncher extends Component {
     constructor(props) {
@@ -18,7 +20,7 @@ class ModalLauncher extends Component {
       }
 
     render() {
-        const { classes } = this.props;
+        const { classes, isLogged } = this.props;
         const { showModal } = this.state;
       
         return (
@@ -29,13 +31,20 @@ class ModalLauncher extends Component {
             >
             Open Modal
             </button>  
-            {showModal && 
-            <Modal showModal onCloseRequest={() => this.handleToggleModal()}>
-              {console.log(classes)}
-            </Modal>}
-            </div>
+            {showModal && !isLogged && <Modal onCloseRequest={() => this.handleToggleModal()}/>}
+            
+            {console.log("props"+ isLogged)}
+            
+            </div>  
         );
     }
 }
 
-export default injectSheet(styles)(ModalLauncher);
+const mapStateToProps = (state) => {
+  //  console.log("state"+state.auth);
+  return{
+    isLogged: state.auth.isLogged
+  }
+};
+
+export default injectSheet(styles)(connect(mapStateToProps)(ModalLauncher));

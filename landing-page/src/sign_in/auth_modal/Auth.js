@@ -1,17 +1,12 @@
 import React, {Component} from 'react';
-import firebase from "firebase";
+import firebase from "firebase/app";
+import 'firebase/auth';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"; 
 import Modal from './Modal';
-
-firebase.initializeApp({
-  apiKey: "AIzaSyAACLP6qdgePIo4yhD9EtZP-iA6mfYLwLs",
-  authDomain: "xe-bid.firebaseapp.com"
-})
+import {connect} from 'react-redux';
+import Dashboard from '../../Dashboard';
 
 class Auth extends Component{
-  state = { 
-    isSignedIn: false,
-  }
 
   uiConfig = {
     signInFlow: "popup",
@@ -26,22 +21,26 @@ class Auth extends Component{
   }
 
   componentDidMount = () => {
+    console.log(firebase.auth().currentUser);
     firebase.auth().onAuthStateChanged( (user) => {
-      this.setState({isSignedIn: !!user}, () => this.props.signinHandler(this.state.isSignedIn));
-      this.props.signinHandler(this.state.isSignedIn); 
+      if(user){
+        this.props.signinHandler();
+      }
+       
       // console.log(this.state.isSignedIn);
       // callback not working!!
 
     })
   }
-  
+
   render() {
     return (
       <div className="Auth">
-        {this.state.isSignedIn ? (
+        {this.props.isSignedIn ? (
           <div>Signed In!!
+            <button onClick={firebase.auth().signOut}>Sign out!</button>
             {/* TODO: send img as a prop*/}
-          <img alt="profile-pic" src={firebase.auth().currentUser.photoURL}/>
+            {/* <img alt="profile-pic" src={firebase.auth().currentUser.photoURL}/> */}
           </div>
         ):(
           <StyledFirebaseAuth
@@ -56,5 +55,20 @@ class Auth extends Component{
   
 }
 
+const mapStateToProps = (state) => {
+  return{
+    isSignedIn: state.auth.isLogged
+  }
 
-export default Auth;
+}
+
+
+const mapDispatchToProps = (dispatch) => {
+  return{
+    signinHandler: () => dispatch({type: 'AUTH_SUCCESS'})
+  }
+
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(Auth);

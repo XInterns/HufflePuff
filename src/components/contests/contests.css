@@ -51,10 +51,15 @@ section {
   top: -1px;
   left: 0;
   right: 0;
+
+ 
 }
 .card:hover {
   background-color: #f3eaea;
   border-color: #f3f3f3;
+
+  transform: scale(1.1);
+  transition-duration: 0.6s;
 }
 .card img {
   max-width: calc(100%);
@@ -87,7 +92,7 @@ section {
 }
 
 .joinGame {
-  background: #6c2a57;
+  background: green;
   color: white;
   height: 100%;
   width: 110%;

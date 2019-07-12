@@ -1,0 +1,51 @@
+.selectPlayerContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.batsmen {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+  
+
+}
+.wicketKeeper {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+  
+
+}
+.bowler {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+  
+
+}
+
+.cardContainer {
+    width: 250px;
+    height:300px;
+}
+
+.card-image1 {
+    background-image: url(`../../img/sachin.jpeg`);
+}
+
+img {
+    width: 250px;
+    height:250px;
+}
+
+h3 {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+.pcard{
+    margin:10px;
+}
+.selected{
+    opacity: 0.7;
+}

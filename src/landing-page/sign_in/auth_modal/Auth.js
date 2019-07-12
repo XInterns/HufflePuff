@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import firebase from "firebase/app";
 import 'firebase/auth';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"; 
-import Modal from './Modal';
 import {connect} from 'react-redux';
-import Dashboard from '../../Dashboard';
 
 class Auth extends Component{
 

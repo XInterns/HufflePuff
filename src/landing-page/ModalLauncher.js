@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import injectSheet from 'react-jss';
 import Modal from './sign_in/auth_modal/Modal';
 import styles from './sign_in/auth_modal/ModalStyles';
-import Auth from './sign_in/auth_modal/Auth';
-import Dashboard from './Dashboard';
 import { connect } from 'react-redux';
 
 

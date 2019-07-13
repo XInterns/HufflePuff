@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "./contests.css";
 
 import ContestCardContainer from "./contestCardContainer";
-import SelectPlayerNavbar from "../../select players/SelectPlayerNavbar";
+import SelectPlayerNavbar from "../select players/SelectPlayerNavbar";
 
 export class Contests extends Component {
   render() {

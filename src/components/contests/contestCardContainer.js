@@ -7,7 +7,7 @@ import {
 
 import "./contests.css";
 
-import contestData from "../../data/ContestData";
+import contestData from "../../assets/data/ContestData";
 
 
 import ContestCard from "./contestCard";

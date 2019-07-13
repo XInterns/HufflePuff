@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "./pools.css";
 
 import PoolCardContainer from "./poolCardContainer";
-import SelectPlayerNavbar from "../../select players/SelectPlayerNavbar";
+import SelectPlayerNavbar from "../select players/SelectPlayerNavbar";
 export class pools extends Component {
   render() {
     return (

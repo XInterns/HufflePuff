@@ -19,15 +19,13 @@ class Auth extends Component{
   }
 
   componentDidMount = () => {
-    console.log(firebase.auth().currentUser);
+    // console.log(firebase.auth().currentUser);
     firebase.auth().onAuthStateChanged( (user) => {
       if(user){
         this.props.signinHandler();
       }
        
       // console.log(this.state.isSignedIn);
-      // callback not working!!
-
     })
   }
 

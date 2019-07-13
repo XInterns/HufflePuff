@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import ModalLauncher from './ModalLauncher';
 import Modal from './sign_in/auth_modal/Modal';
-import Dashboard from './Dashboard';
+// import Dashboard from './Dashboard';
+import Auth from './sign_in/auth_modal/Auth';
 
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
                 <ModalLauncher/>
                 <Switch>
                     {/* <Route exact path='/' component={ModalLauncher} /> */}
-                    <Route path='/dashboard' component={Dashboard} />
+                    <Route path='/dashboard' component={Auth} />
                     <Route path='/authmodal' component={Modal} />
                 </Switch>
 

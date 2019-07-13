@@ -28,7 +28,6 @@ class Auth extends Component{
       }
        
       // console.log(this.state.isSignedIn);
-      // callback not working!!
 
     })
   }

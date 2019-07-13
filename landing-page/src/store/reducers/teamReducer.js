@@ -2,7 +2,7 @@ const initState = {
     isModalOpen: null
 }
 
-const modalReducer   = (state = initState, action) => {
+const teamReducer   = (state = initState, action) => {
     return state;
 }
 

@@ -1,14 +1,15 @@
 import React from "react";
+import PoolCard from "./poolCard";                                      
 
-import PoolCard from "./poolCard";
-
-const PoolCardContainer = () => {
+const PoolCardContainer = ({ choosePools }) => {
   return (
     <div>
       <div className="poolContainer">
-        <PoolCard total_price="100" pool_price="10" value="pool_100"/>
-        <PoolCard total_price="200" pool_price="15" value="pool_200"/>
-        <PoolCard total_price="500" pool_price="50" value="pool_500"/>
+        { choosePools && choosePools.map(p => {
+          return(
+              <PoolCard prize={p.prize} entry={p.entry} key={p.id}/>
+          )
+        })}
       </div>
     </div>
   );

@@ -3,6 +3,8 @@
   justify-content: space-around;
   margin: 40px auto;
   height: 100%;
+  /* background-image: url(/src/assets/img/photo-1540747913346-19e32dc3e97e.jpeg) */
+  /* a background image needed */
 }
 div .header {
   display: flex;

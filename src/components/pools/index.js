@@ -1,18 +1,26 @@
 import React, { Component } from "react";
-
 import "./pools.css";
-
+import {connect} from 'react-redux';
 import PoolCardContainer from "./poolCardContainer";
 import SelectPlayerNavbar from "../select players/SelectPlayerNavbar";
-export class pools extends Component {
+
+class pools extends Component {
   render() {
+    const { choosePool } = this.props;
     return (
       <div>
         <SelectPlayerNavbar id="select pool" heading="Select Pool" link="/CricketPool1" />
-        <PoolCardContainer />
+        <PoolCardContainer choosePools={choosePool} />
       </div>
     );
   }
 }
 
-export default pools;
+
+const mapStateToProps = (state) => {
+  return{
+    choosePool: state.pool.pools
+  }
+};
+
+export default connect(mapStateToProps)(pools);

@@ -6,10 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./contests.css";
-
 import contestData from "../../assets/data/ContestData";
-
-
 import ContestCard from "./contestCard";
 
 class ContestCardContainer extends Component {

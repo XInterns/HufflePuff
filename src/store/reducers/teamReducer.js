@@ -1,8 +1,8 @@
 const initState = {
-    isModalOpen: null
+    
 }
 
-const teamReducer   = (state = initState, action) => {
+const teamReducer = (state = initState, action) => {
     return state;
 }
 

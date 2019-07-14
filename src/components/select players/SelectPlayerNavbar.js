@@ -5,9 +5,9 @@ import './SelectPlayerNavbar.css'
 function SelectPlayerNavbar(props) {
     return (
       <>
-        <nav class="nav-extended navbar">
-        <div class="nav-wrapper">
-          <Link to={props.link} class="heading">{props.heading}</Link>
+        <nav className="nav-extended navbar">
+        <div className="nav-wrapper">
+          <Link to={props.link} className="heading">{props.heading}</Link>
           {/* <a href="#" data-target="mobile-demo" class="sidenav-trigger"></a> */}
         </div>
 

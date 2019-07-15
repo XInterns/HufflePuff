@@ -11,8 +11,8 @@ const ImageDivs=(props) => {
         <div className={classname}>
             <div className={(classname==="pimg1")? "ptextXPL text": "ptext text"}>
                 <NavLink className="border" to= {isLogged ? "/contests" : "/batsmen"}>
-                   {props.imageText}
-                </NavLink> )
+                  {props.imageText}
+                </NavLink> 
                 
                 {/* Make changes to open the Modal if user isn't logged in!! ) */}
                 {/* or else provide this option when we click on CRICKET!! */}
@@ -22,7 +22,7 @@ const ImageDivs=(props) => {
                     <div> </div>
                 )
                 :(<button className="button">
-                    <span>Instructions</span>
+                    <span>INSTRUCTIONS</span>
                   </button> )}
 
             </div>

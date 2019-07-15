@@ -1,0 +1,24 @@
+.Heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    line-height:15px
+}
+.content{
+
+    display: flex;
+    justify-content: center;
+    
+    flex-direction:column;
+
+}
+.sub-heading{
+    display: flex;
+    flex-direction:column;
+    line-height:25px;
+    padding:10px;
+}
+.firebaseui-idp-button{
+    width: 253px;
+    margin-left:50px;
+}

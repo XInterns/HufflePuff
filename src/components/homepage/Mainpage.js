@@ -1,9 +1,17 @@
 import React from 'react';
 import ImageDivs from './ImageDivs';
 import Section from './Section';
+import {connect} from 'react-redux';
+// import  {BrowserRouter,  Switch, Route } from 'react-router-dom';
+// import Contests from "../../components/contests";
+// import AddPlayers from '../select players/AddPlayers';
+// import SignInModalLauncher from '../sign_in/SignInModalLauncher';
 
-const Mainpage = () => {
+const Mainpage = (props) => {
+    const { isLogged } = props;
+    console.log(isLogged);
     return (
+        // <BrowserRouter>
         <div>
             <ImageDivs classname= "pimg1" imageText="XPL XEBIA PREMIER LEAGUE"/>
             <Section  sectionId="cricket" 
@@ -27,9 +35,22 @@ const Mainpage = () => {
             <ImageDivs classname="pimg4" imageText="Start Betting" />
       
             <ImageDivs classname="pimg1" imageText="Start Betting" />
+            {/* <Switch>
+                <Route path='/contests' component={Contests}></Route>
+                <Route path='/batsmen' component={AddPlayers}></Route>
+            </Switch> */}
+
+                
         </div>
+        // </BrowserRouter>
     )
 }
 
-export default Mainpage;
+const mapStateToProps = (state) => {
+    return{
+        isLogged: state.auth.isLogged
+    }
+  };
+
+export default connect(mapStateToProps)(Mainpage);
 

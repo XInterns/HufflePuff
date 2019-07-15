@@ -29,7 +29,7 @@ class PlayerCard extends React.Component {
           <p> Player credit: 11 pts</p>
         </div>
       </div>
-      </div>
+      </div> 
   );
    }
     

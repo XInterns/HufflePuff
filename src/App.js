@@ -19,7 +19,7 @@ class App extends React.Component {
           {/* <Route path='/signup' component={SignUp }/> */}
           <Route path='/batsmen' component={AddPlayers} />
           <Route path="/CricketPool1" component={pools} />
-          <Route path="/contests" exact component={Contests} />
+          <Route path="/contests" component={Contests} />
         </Switch>
     </div>
      </BrowserRouter>

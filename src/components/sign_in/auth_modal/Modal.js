@@ -4,7 +4,6 @@ import isNil from 'lodash/fp/isNil';
 import styles from './ModalStyles';
 import Heading from './Heading';
 import Auth from './Auth';
-import firebaseconfig from '../config/firebaseConfig'
 
 class Modal extends Component {
     constructor(props) {
@@ -61,7 +60,6 @@ class Modal extends Component {
         return (
           <div className={classes.modalOverlay}>
             <div className={classes.modal} ref={node => (this.modal = node)}>
-                {/* <img src=""/> */}
                 <button
                 className={classes.closeButton}
                 onClick={onCloseRequest}

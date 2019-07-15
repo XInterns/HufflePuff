@@ -9,7 +9,7 @@ import {connect} from 'react-redux';
 
 const Mainpage = (props) => {
     const { isLogged } = props;
-    console.log(isLogged);
+    // console.log(isLogged);
     return (
         // <BrowserRouter>
         <div>
@@ -46,6 +46,7 @@ const Mainpage = (props) => {
     )
 }
 
+// remove after complete testing
 const mapStateToProps = (state) => {
     return{
         isLogged: state.auth.isLogged

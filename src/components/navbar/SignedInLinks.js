@@ -6,7 +6,8 @@ const SignedInLinks=()=> {
     return(
         <ul className="right">
             {/* <li><NavLink to="/batsmen" exact>Select Team </NavLink> </li> */}
-            <li><NavLink to="/" exact>Sign Out</NavLink> </li>
+            <li><NavLink to="/quizStart" exact>Play Quiz</NavLink> </li>
+            <li><NavLink to="/" exact> Sign Out</NavLink> </li>
             <li><NavLink to="/" exact className="btn btn-floating pink lighten-1">NN</NavLink> </li>
         </ul>
     )

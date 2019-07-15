@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SIgnedOutLinks';
 import { connect } from 'react-redux';
-
+import './navbar.css'
 const Navbar=(props)=> {
     const { isLogged } = props;
     return(

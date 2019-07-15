@@ -1,4 +1,6 @@
 import React from 'react';
+
+import {NavLink} from 'react-router-dom'
 import "./quizstart.css";
 
 
@@ -8,9 +10,9 @@ const QuizStart = () =>
     return (
         <div>
             <div className="inst-block">
-                <div  className="btn"> <button className= " ui floating message options ">
+                <div  className="btn"> <NavLink to ="/quiz" className= " ui floating message options quizHeading">
                     Let's Test Your Sports
-                </button>
+                 </NavLink>
                 </div> 
                 <div className="instructions">
                         Instructions

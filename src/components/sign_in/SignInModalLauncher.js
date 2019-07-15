@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import injectSheet from 'react-jss';
-import Modal from './sign_in/auth_modal/Modal';
-import styles from './sign_in/auth_modal/ModalStyles';
+import Modal from './auth_modal/Modal';
+import styles from './auth_modal/ModalStyles';
 import { connect } from 'react-redux';
 
 
@@ -27,7 +27,7 @@ class ModalLauncher extends Component {
             className={classes.modalButton} 
             onClick={() => this.handleToggleModal()}
             >
-            Open Modal
+            Sign In
             </button>  
             {showModal && !isLogged && <Modal onCloseRequest={() => this.handleToggleModal()}/>}
             

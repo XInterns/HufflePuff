@@ -1,10 +1,12 @@
 import authReducer from './authReducer';
-import modalReducer from './teamReducer';
+import teamReducer from './teamReducer';
+import poolReducer from './poolReducer';
 import {combineReducers} from 'redux';
 
 const rootReducer = combineReducers({
     auth: authReducer,
-    modal: modalReducer
+    team: teamReducer,
+    pool: poolReducer
 });
 
 export default rootReducer;

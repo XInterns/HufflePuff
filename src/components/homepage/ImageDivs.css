@@ -1,28 +1,28 @@
 .pimg1 {
-    background-image: url(../../img/image1.png);
+    background-image: url(../../assets/img/image1.png);
     min-height: 100vh;
 }
 
 .pimg2 {
     min-height: 400px;
-    background-image: url(../../img/image2.jpg);
+    background-image: url(../../assets/img/image2.jpg);
     width:100%;
 }
  
 .pimg3 {
     min-height: 400px;
-    background-image: url(../../img/image3.jpg);
+    background-image: url(../../assets/img/image3.jpg);
     width:100%;
 }
 
 .pimg4 {
     min-height: 400px;
-    background-image: url(../../img/image4.jpg);
+    background-image: url(../../assets/img/image4.jpg);
 }
 
 .pimg5 {
     min-height: 400px;
-    background-image: url(../../img/image1.png);
+    background-image: url(../../assets/img/image1.png);
 }
 
 .pimg1, .pimg2, .pimg3, .pimg4{

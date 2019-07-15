@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
  
 const ContestCard = ({ game }) => {
-function handleClick(e){
+
+  function handleClick(e){
     console.log(e.target.value);
   }
+  
   const { index, picture, team_1, team_2, date, link ,pool_value} = game;
   return (
-    <label for="join game button">
+    <label htmlFor="join game button">
     <div id={`contestCard-${index}`} className="contestCard">
       <img src={picture} className="game-img" alt="unabletodisplay" />
       <div className="details">

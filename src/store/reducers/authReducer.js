@@ -1,7 +1,16 @@
-const initState = {}
-
-const authReducer = (state = initState,action) => {
-    return state;
+const initState = {
+    isLogged: false
 }
 
-export default authReducer;
+const authReducer = (state = initState, action) => {
+    switch(action.type){
+        case 'AUTH_SUCCESS':
+            return {isLogged: true};
+        case 'LOGOUT':
+            return {isLogged: false};
+        default:
+            return state; 
+    }
+};
+
+export default authReducer

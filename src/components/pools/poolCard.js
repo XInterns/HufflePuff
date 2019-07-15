@@ -7,6 +7,7 @@ const PoolCard = props => {
 
   function handleClick(e){
     console.log(e.target.value);
+    // change the state of the chosen --> true
   }
   return (
     
@@ -14,13 +15,13 @@ const PoolCard = props => {
       <span className="total-prize-pool">Prize Pool</span>
 
       <div className="total">
-        {props.total_price}
+        {props.prize}
         <FontAwesomeIcon icon={faCoins} />
       </div>
       <span className="pool-entry">Entry</span>
       <div className="entry">
         <FontAwesomeIcon icon={faHandPointRight}/>
-        <div className="pool-price">{props.pool_price}</div>
+        <div className="pool-price">{props.entry}</div>
         <FontAwesomeIcon icon={faCoins} className="chotaCoin"/>
       </div>
       <Link to = "/batsmen"><button className="join-pool-button" value={props.value} onClick={handleClick}>JOIN POOL</button></Link>

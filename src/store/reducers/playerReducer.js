@@ -4,7 +4,7 @@ const initState = {
       {
         playerid: "001",
         team: "India",
-        picture:"http://assets-news-bcdn-ll.dailyhunt.in/cmd/resize/400x400_60/fetchdata15/images/79/bc/95/79bc95d586a30c7b9a71d4b447ba185b.jpg",
+        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
         name: "Virat Kohli",
         type:"batsman"
        
@@ -13,7 +13,7 @@ const initState = {
       {
         playerid: "002",
         team: "India",
-        picture:"http://assets-news-bcdn-ll.dailyhunt.in/cmd/resize/400x400_60/fetchdata15/images/79/bc/95/79bc95d586a30c7b9a71d4b447ba185b.jpg",
+        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
         name: "Sachin",
         type:"bowler"
         
@@ -21,7 +21,7 @@ const initState = {
       {
         playerid: "003",
         team: "India",
-        picture:"http://assets-news-bcdn-ll.dailyhunt.in/cmd/resize/400x400_60/fetchdata15/images/79/bc/95/79bc95d586a30c7b9a71d4b447ba185b.jpg",
+        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
         name: "Dhoni",
         type:"allrounder"
         
@@ -29,7 +29,7 @@ const initState = {
       {
         playerid: "004",
         team: "India",
-        picture:"http://assets-news-bcdn-ll.dailyhunt.in/cmd/resize/400x400_60/fetchdata15/images/79/bc/95/79bc95d586a30c7b9a71d4b447ba185b.jpg",
+        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
         name: "Rahul",
         type:"wicketkeeper"
         
@@ -37,14 +37,14 @@ const initState = {
       {
         playerid: "005",
         team: "India",
-        picture:"http://assets-news-bcdn-ll.dailyhunt.in/cmd/resize/400x400_60/fetchdata15/images/79/bc/95/79bc95d586a30c7b9a71d4b447ba185b.jpg",
+        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
         name: "Anushka",
         type:"allrounder"
         
       }
     ]
   }
-}
+
 const playerReducer = (state = initState, action) => {
     return state;
 }

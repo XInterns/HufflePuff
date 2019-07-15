@@ -1,0 +1,23 @@
+.instructions
+{
+    font-size: 1.2rem;
+}
+
+.btn
+{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding:0 0 1rem 0;
+}
+
+.instructions
+{
+    padding:0 30%;
+
+}
+
+.inst-block
+{
+    margin: 40 px;
+}

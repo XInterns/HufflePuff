@@ -1,0 +1,97 @@
+.toolbar{
+    position:fixed;
+    width: 100%;
+    background-image:linear-gradient(#4b0930,#6c2a39);
+    top: 0;
+    left: 0;
+    height:56px;
+    font-family: monospace;
+}
+
+.toolbar-navigation{
+    display:flex;
+    align-items: center;
+    height:100%;
+    padding:0 1rem;
+
+}
+.Appname{
+  color:white;
+  text-decoration: none;
+  font-size:2rem;
+  letter-spacing: 2px;
+
+}
+.spacer
+{
+    flex:1;
+}
+.fa-user-circle{
+    font-size: 2.5rem;
+    padding:0 10% 0 0 ;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content div:hover {background-color: #ddd;margin:0;}
+
+.navigation-items:hover .dropdown-content {display: block;}
+.dropbtn:hover .dropdown-content {display: block;}
+
+.dropbtn {
+    
+    
+    padding: 10px;
+    /* font-size: 16px; */
+    border: none;
+    display: flex;
+    right:0;
+    left:auto;
+
+  }
+  
+  .dropdown {
+    position: absolute;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    padding: 0;
+
+    background-color:#6c2a39;
+    width:12%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content div{
+      font-size: 100%;
+      padding: 12px;
+
+      /* margin:10px; */
+  }
+
+  .btn-logout
+  {
+    display: flex;
+    padding:10% 0 10% 1.5% ;
+  }
+
+  .fa-sign-out-alt
+  { 
+    
+    font-size:250%;
+  }
+  .logout-txt
+  { 
+    padding:10% 0 0 0;
+    font-size:15px;
+  }
+  
+  

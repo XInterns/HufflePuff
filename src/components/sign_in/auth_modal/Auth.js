@@ -4,6 +4,8 @@ import 'firebase/auth';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"; 
 import {connect} from 'react-redux';
 
+import "./auth.css"
+
 class Auth extends Component{
 
   uiConfig = {

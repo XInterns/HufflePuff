@@ -8,8 +8,7 @@ const initState = {
         name: "Rohit Sharma",
         type:"batsman",
         playerinfo:"Rohit Sharma oozes batting talent: malleable wrists, knack to find the gaps, and the extra half a second when he plays his shots. However, for a player of his class, the first six years of his international career were frustrating for him, the team, and the spectators, as the odd delightful innings was followed and preceded by plenty of failures. It all came together finally in 2013, when Rohit was promoted to open the innings in ODIs. The move turned out to be a masterstroke, as Rohit found form in the Champions Trophy, and then went into overdrive in the ODI series against Australia, scoring two centuries, including 209, only the third double in ODI cricket.",
-        selected : "false"
-        
+        selected : "false"        
       },
       {
         playerid: "002",
@@ -27,8 +26,7 @@ const initState = {
         name: "Mahendra Singh Dhoni",
         type:"wicketkeeper",
         playerinfo:"Barring Sachin Tendulkar, MS Dhoni is arguably the most popular and definitely the most scrutinised cricketer from India. He has done so coming from the cricketing backwaters, the mining state of Jharkhand, and through a home-made batting and wicketkeeping technique, and a style of captaincy that scales the highs and lows of both conservatism and unorthodoxy. Under Dhoni's captaincy, India have won the top prize in all formats: the No.1 Test ranking for 18 months starting December 2009, the 50-over World Cup in 2011 and the World Twenty20 on his captaincy debut in 2007.",
-        selected : "false"
-        
+        selected : "false"        
       },
       {
         playerid: "004",
@@ -37,8 +35,7 @@ const initState = {
         name: "Kannaur Lokesh Rahul",
         type:"batsman",
         playerinfo:"A tall, elegant right-hand batsman who can keep wicket in a crisis, KL Rahul is among the most highly rated opening batsmen in India's next generation. Rahul was a part of India's squad in the 2010 Under-19 World Cup and made his first-class debut later that year. Having taken a while to establish himself as a first-class cricketer, he enjoyed a breakthrough 2013-14 season, laying the foundation for Karnataka's Ranji Trophy victory with 1033 runs, which included three centuries, three nineties, and a Man-of-the-Match performance in the final. ",
-        selected:"false"
-        
+        selected:"false"        
       },
       {
         playerid: "005",
@@ -119,7 +116,7 @@ const initState = {
         playerinfo:"A wild-card inclusion for Bangladesh's maiden tour of England in 2005, Mushfiqur Rahim was just 16 when he was selected for that daunting trip - two Tests in May, followed by six ODIs against England and Australia - even though he hadn't been named in the preliminary squad of 20. Mushfiqur was principally selected as an understudy to the ever-present wicketkeeper, Khaled Mashud, but his inclusion was further evidence of Bangladesh's determination to build for a better future.  ",
         selected:"false"
         
-      },
+      },        
     ]
   }
 

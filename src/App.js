@@ -26,6 +26,8 @@ class App extends React.Component {
           {/* <Route path="/quiz" exact component={Quiz} /> */}
           <Route path="/quizStart" exact component={QuizStart} />
           <Route path="/quiz" exact component={total} />
+          
+
         </Switch>
     </div>
      </BrowserRouter>

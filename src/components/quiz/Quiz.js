@@ -2,7 +2,7 @@ import React from 'react';
 import {QuizData} from './QuizData';
 import './Quizpage.css';
 // import  from './timer';
-
+import {NavLink} from 'react-router-dom'
 
 class Quiz extends React.Component
 {
@@ -83,7 +83,7 @@ class Quiz extends React.Component
             <div className="result">
                 <h2>Game Over The Final Score Is {this.state.score * 10} </h2>
 
-                <button className="ui inverted button   ">Go Back</button>
+                <NavLink to="/" className="ui inverted button   ">Go Back</NavLink>
                 
             </div>
             )

@@ -4,7 +4,7 @@ const initState = {
       {
         playerid: "001",
         team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
+        pic:"http://cricketindia.info/wp-content/uploads/2016/07/virat-kohli.png",
         name: "Virat Kohli",
         type:"batsman"
        
@@ -13,15 +13,15 @@ const initState = {
       {
         playerid: "002",
         team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Sachin",
+        pic:"https://icc-corp-2013-live.s3.amazonaws.com/players/champions-trophy-2017/284/1124.png",
+        name: "Jasprit Bumrah",
         type:"bowler"
         
       },
       {
         playerid: "003",
         team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
+        pic:"https://www.searchpng.com/wp-content/uploads/2019/03/MS-Dhoni-PNG-Image-715x715.png",
         name: "Dhoni",
         type:"allrounder"
         
@@ -29,17 +29,33 @@ const initState = {
       {
         playerid: "004",
         team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Rahul",
+        pic:"https://iplstatic.s3.amazonaws.com/players/284/2975.png",
+        name: "Ishan Kishan",
         type:"wicketkeeper"
         
       },
       {
         playerid: "005",
         team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Anushka",
+        pic:"https://www.cricket.com.au/-/media/Players/Men/International/India/ODIWC19/Ravindra-Jadeja-CWC19.ashx",
+        name: "Ravindra Jadeja",
         type:"allrounder"
+        
+      },
+      {
+        playerid: "006",
+        team: "India",
+        pic:"https://icc-corp-2013-live.s3.amazonaws.com/players/champions-trophy-2017/284/102.png",
+        name: "Dinesh Karthik",
+        type:"wicketkeeper"
+        
+      },
+      {
+        playerid: "007",
+        team: "Bangladesh",
+        pic:"https://www.cricket.com.au/-/media/Players/Men/International/Bangladesh/Mustafizur-Rahman-CWC19.ashx",
+        name: "Mustafizur Rahman",
+        type:"bowler"
         
       }
     ]

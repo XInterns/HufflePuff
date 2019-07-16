@@ -4,15 +4,14 @@ import PlayerCard from './PlayerCard';
 import {connect} from 'react-redux';
 import './AddPlayers.css';
 
-function Batsmen(props) {
+function Bowler(props) {
     const {choosePlayer} = props;
-    // console.log(choosePlayer);
     return (
-        <div className="batsmen">
-            { choosePlayer && choosePlayer.map(wk => {
-                if((wk.team === 'India' || wk.team === 'Bangladesh') && wk.type === 'allrounder'){
-                    // console.log(wk);
-                    return (<PlayerCard playerform = {wk}/>)
+        <div className="batsmenb">
+            { choosePlayer && choosePlayer.map(bowler => {
+                if((bowler.team === 'India' || bowler.team === 'Bangladesh') && bowler.type === 'bowler'){
+                    console.log(bowler.type)
+                    return (<PlayerCard playerform = {bowler}/>)
                     
                 }
             })}
@@ -26,4 +25,4 @@ const mapStateToProps = (state) => {
     }
   };
   
-export default connect(mapStateToProps)(Batsmen);
+export default connect(mapStateToProps)(Bowler);

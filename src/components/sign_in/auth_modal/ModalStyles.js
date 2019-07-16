@@ -3,6 +3,9 @@ export default {
     '@global': {
       'body': { overflow: 'hidden' },
     },
+
+
+  
     
     // The modal wrapper: absolute positioning,
     // 100% of the browser window height and width.
@@ -55,8 +58,8 @@ export default {
     // browser window, white background square with a gray X.
     closeButton: {
       position: 'relative',
-      top: 0,
-      left: 248,
+      top: -21,
+      left: 224,
       background: '#111',
       width: '1rem',
       height: '1rem',

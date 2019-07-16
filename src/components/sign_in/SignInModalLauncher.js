@@ -30,8 +30,7 @@ class ModalLauncher extends Component {
             Sign In
             </button>  
             {showModal && !isLogged && <Modal onCloseRequest={() => this.handleToggleModal()}/>}
-            
-            {console.log("props"+ isLogged)}
+            {/* {console.log("props"+ isLogged)} */}
             
             </div>  
         );

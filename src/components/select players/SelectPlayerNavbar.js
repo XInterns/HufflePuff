@@ -8,25 +8,25 @@ function SelectPlayerNavbar(props) {
         <nav className="nav-extended navbar">
         <div className="nav-wrapper">
           <Link to={props.link} className="heading">{props.heading}</Link>
-          {/* <a href="#" data-target="mobile-demo" class="sidenav-trigger"></a> */}
+          {/* <a href="#" data-target="mobile-demo" className="sidenav-trigger"></a> */}
         </div>
 
         { props.id==="select player" && 
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><NavLink activeStyle={{color:'orange'}} to="/batsmen" >{props.link1}</NavLink></li>
-            <li class="tab"><NavLink activeStyle={{color:'orange'}} to="/wicketKeeper" >{props.link2}</NavLink></li>
-            <li class="tab"><NavLink activeStyle={{color:'orange'}} to="/bowler" >{props.link3}</NavLink></li>
-            <li class="tab"><NavLink activeStyle={{color:'orange'}} to="/allRounder" >{props.link4} </NavLink></li>
+        <div className="nav-content">
+          <ul className="tabs tabs-transparent">
+            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/batsmen" >{props.link1}</NavLink></li>
+            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/wicketKeeper" >{props.link2}</NavLink></li>
+            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/bowler" >{props.link3}</NavLink></li>
+            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/allRounder" >{props.link4} </NavLink></li>
           </ul>
         </div>
         }
       </nav>
     
-      {/* <div id="test1" class="col s12">Test 1</div>
-      <div id="test2" class="col s12">Test 2</div>
-      <div id="test3" class="col s12">Test 3</div>
-      <div id="test4" class="col s12">Test 4</div> */}
+      {/* <div id="test1" className="col s12">Test 1</div>
+      <div id="test2" className="col s12">Test 2</div>
+      <div id="test3" className="col s12">Test 3</div>
+      <div id="test4" className="col s12">Test 4</div> */}
       </>
     );
 }

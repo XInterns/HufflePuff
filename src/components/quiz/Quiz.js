@@ -1,5 +1,6 @@
 import React from 'react';
 import {QuizData} from './QuizData';
+import './Quizpage.css';
 // import  from './timer';
 
 
@@ -81,6 +82,8 @@ class Quiz extends React.Component
             return(
             <div className="result">
                 <h2>Game Over The Final Score Is {this.state.score * 10} </h2>
+
+                <button className="ui inverted button   ">Go Back</button>
                 
             </div>
             )
@@ -89,10 +92,10 @@ class Quiz extends React.Component
 
         return (
             <div className="App">
-                <span>
+                <span className="ques-num">
                     {`Questions ${currentQuestion + 1} out of ${QuizData.length}`}
                 </span>
-                <h2>{questions}</h2>
+                <h2 className="ques-diaplay">{questions}</h2>
                 
                     {options.map(option => (
                         <p
@@ -112,7 +115,8 @@ class Quiz extends React.Component
                     </button>)}
                     {currentQuestion === QuizData.length - 1 && (
                     <button
-                    onClick={this.finishHandler}>Fin80ish</button>)  
+                    className="ui inverted button"
+                    onClick={this.finishHandler}>Finish</button>)  
                     }
                  
 

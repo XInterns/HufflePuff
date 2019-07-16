@@ -13,14 +13,18 @@
 
 .instructions
 {
-    padding:0 30%;
+    /* padding:0 30%; */
 
 }
 
 .inst-block
 {
-    margin: 40 px;
+    
+    /* margin: 40 px; */
+    padding: 10% 30% 0 30%;
+
+    
 }
 .quizHeading{
-    color : white;
+    /* color : white; */
 }

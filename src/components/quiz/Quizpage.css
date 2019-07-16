@@ -1,7 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+
+
 .App {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Varela Round', sans-serif;
     text-align: center;
-    color: #f1f2f6;
+    color: white;
   }
   body {
     
@@ -10,18 +16,13 @@
     background: -webkit-linear-gradient(to right, #aa076b, #61045f); 
     background: linear-gradient(to right, #aa076b, #bc85bb); 
   }
-  
-  .result {
-    
-    
-    
-	  
-  }
+
   
   .options {
     cursor: pointer;
     border: 2px solid #6C2A57;
-    padding: 3px;
+    padding: 5px;
+    font-size: 1.5rem;
   }
   
   .selected {
@@ -30,6 +31,19 @@
   
   ul {
     list-style-type: none;
+  }
+  .ques-diaplay
+  {
+    font-size: 3rem;
+  }
+  .result
+  {
+    color: aliceblue;
+  }
+  .ques-num
+  {
+    font-size: 2rem;
+    padding: 0%;
   }
   
 

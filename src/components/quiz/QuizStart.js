@@ -1,6 +1,7 @@
 import React from 'react';
 
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
+// import Example from './timer';
 import "./quizstart.css";
 
 
@@ -10,12 +11,12 @@ const QuizStart = () =>
     return (
         <div>
             <div className="inst-block">
-                <div  className="btn"> <NavLink to ="/quiz" className= " ui floating message options quizHeading">
+                <div  > <NavLink to ="/quiz" className= " ui floating message options quizHeading">
                     Let's Test Your Sports
                  </NavLink>
                 </div> 
                 <div className="instructions">
-                        Instructions
+                    <div>Instructions</div>
                     <div  className="">  
                         1.The Quiz will be of "" questions.
                     </div>
@@ -35,6 +36,9 @@ const QuizStart = () =>
     );
 
 } 
+
+
+
 
 
 

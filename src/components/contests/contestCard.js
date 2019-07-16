@@ -14,7 +14,7 @@ const ContestCard = ({ game }) => {
     <div id={`contestCard-${index}`} className="contestCard">
       <img src={picture} className="game-img" alt="unabletodisplay" />
       <div className="details">
-        <span className="index">{index + 1}</span>
+        {/* <span className="index">{index + 1}</span> */}
         <p className="date">{date}</p>
         <p className="match">
           {team_1} vs {team_2}

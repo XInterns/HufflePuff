@@ -21,10 +21,10 @@ class SignedInLinks extends Component{
             {/* <li><NavLink to="/batsmen" exact>Select Team </NavLink> </li> */}
             {/* <li><NavLink to="/" exact>Sign Out</NavLink> </li> */}
             {/* route/redirect on signout to homepage  */}
-            <li><button 
+            <li><NavLink activeStyle={{color:'orange'}}
             onClick={() => this.handleSignout()}>
             Sign out!
-            </button>
+            </NavLink>
             </li>
             <li><NavLink to="/" exact className="btn btn-floating pink lighten-1">NN</NavLink> </li>
         </ul>

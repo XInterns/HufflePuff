@@ -3,6 +3,7 @@ import injectSheet from 'react-jss';
 import Modal from './auth_modal/Modal';
 import styles from './auth_modal/ModalStyles';
 import { connect } from 'react-redux';
+import {NavLink} from "react-router-dom";
 
 
 class ModalLauncher extends Component {
@@ -23,12 +24,12 @@ class ModalLauncher extends Component {
       
         return (
             <div>
-            <button 
+            <NavLink 
             className={classes.modalButton} 
             onClick={() => this.handleToggleModal()}
             >
             Sign In
-            </button>  
+            </NavLink>  
             {showModal && !isLogged && <Modal onCloseRequest={() => this.handleToggleModal()}/>}
             {/* {console.log("props"+ isLogged)} */}
             

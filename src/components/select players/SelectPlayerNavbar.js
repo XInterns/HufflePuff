@@ -15,8 +15,8 @@ function SelectPlayerNavbar(props) {
         <div className="nav-content">
           <ul className="tabs tabs-transparent">
             <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/batsmen" >{props.link1}</NavLink></li>
-            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/wicketKeeper" >{props.link2}</NavLink></li>
-            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/bowler" >{props.link3}</NavLink></li>
+            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/bowler" >{props.link2}</NavLink></li>
+            <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/wicketkeeper" >{props.link3}</NavLink></li>
             <li className="tab"><NavLink activeStyle={{color:'orange'}} to="/allRounder" >{props.link4} </NavLink></li>
           </ul>
         </div>

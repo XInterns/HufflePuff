@@ -10,7 +10,7 @@ function Batsmen(props) {
     return (
         <div className="batsmen">
             { choosePlayer && choosePlayer.map(wk => {
-                if((wk.team === 'India' || wk.team === 'Bangladesh') && wk.type === 'allrounder'){
+                if((wk.team === 'India' || wk.team === 'Bangladesh') && wk.type === 'wicketkeeper'){
                     // console.log(wk);
                     return (<PlayerCard playerform = {wk}/>)
                     

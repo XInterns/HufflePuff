@@ -7,7 +7,7 @@ import './AddPlayers.css';
 function AllRounder(props) {
     const {choosePlayer} = props;
     return (
-        <div className="batsmena">
+        <div className="batsmen">
             { choosePlayer && choosePlayer.map(allrounder => {
                 if((allrounder.team === 'India' || allrounder.team === 'Bangladesh') && allrounder.type === 'allrounder'){
                     // console.log(allrounder);

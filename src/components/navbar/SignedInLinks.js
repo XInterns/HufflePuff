@@ -23,7 +23,7 @@ class SignedInLinks extends Component{
             {/* route/redirect on signout to homepage  */}
             <li><NavLink activeStyle={{color:'orange'}}
             onClick={() => this.handleSignout()}>
-            Sign out!
+            Sign Out
             </NavLink>
             </li>
             <li><NavLink to="/" exact className="btn btn-floating pink lighten-1">NN</NavLink> </li>

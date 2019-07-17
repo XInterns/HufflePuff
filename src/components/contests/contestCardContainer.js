@@ -6,33 +6,38 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./contests.css";
-import contestData from "../../assets/data/ContestData";
+// import {games} from "../../assets/data/Data";
+import {connect} from 'react-redux';
 import ContestCard from "./contestCard";
 
 class ContestCardContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      game: contestData.games[0]
+      game: this.props.chooseContest[0]
     };
   }
 
   nextgame = () => {
     const newIndex = this.state.game.index + 1;
+    // console.log('nextgame:'+newIndex);
     this.setState({
-      game: contestData.games[newIndex]
+      game: this.props.chooseContest[newIndex]
     });
   };
 
   prevgame = () => {
     const newIndex = this.state.game.index - 1;
     this.setState({
-      game: contestData.games[newIndex]
+      game: this.props.chooseContest[newIndex]
     });
   };
 
   render() {
     const { game } = this.state;
+    const {chooseContest} = this.props;
+    // console.log('game:'+ game.index);
+    // console.log('choosecontest:'+ chooseContest);    
     return (
       <div className="game-container">
         <div className="page">
@@ -50,8 +55,9 @@ class ContestCardContainer extends Component {
             <button
               className="next"
               onClick={() => this.nextgame()}
-              disabled={game.index === contestData.games.length - 1}
+              disabled={game.index === chooseContest.length - 1}
             >
+              {console.log("length:"+chooseContest.length)}
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>
@@ -61,4 +67,13 @@ class ContestCardContainer extends Component {
   }
 }
 
-export default ContestCardContainer;
+const mapStateToProps = (state) => {
+  return{
+    chooseContest: state.contest.games
+  }
+};
+
+export default connect(mapStateToProps)(ContestCardContainer);
+
+
+

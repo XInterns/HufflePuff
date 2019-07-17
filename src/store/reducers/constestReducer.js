@@ -1,20 +1,18 @@
-import {contests} from '../../assets/data/ContestData'
+import {games} from '../../assets/data/Data'
 
 const initState = {
-    // contests: [
-    //     { id: 'cc001', sport:'cricket', teamA:'india', teamB:'bangladesh' }
-    // ]
-    contests
+    games
 }
 
 const contestReducer = (state = initState, action) => {
     // define actions for the state of a game by a user
     switch (action.type) {
         case 'MATCH_CHOSEN':
-        //   console.log('create project success');
+            return {...state,contestChosen: true}
+            // console.log('create project success');
+          
         // complete object array..
-          return state;
-    return state;
+        default:    return state;
     }
 }
 

@@ -8,6 +8,10 @@ import Contests from "./components/contests";
 import pools from "./components/pools";
 import Instructions from './components/instructions/Instructions';
 import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
+// import Quiz from './components/quiz/Quiz';
+import QuizStart from './components/quiz/QuizStart';
+import total from './components/quiz/quiztest';
+
 
 class App extends React.Component {
 
@@ -24,6 +28,10 @@ class App extends React.Component {
           <Route path="/contests" component={Contests} />
           <Route path="/instructions" component={Instructions}/>
           <Route path="/signin" component={SignInModalLauncher} />  
+          <Route path="/contests" exact component={Contests} />
+          {/* <Route path="/quiz" exact component={Quiz} /> */}
+          <Route path="/quizStart" exact component={QuizStart} />
+          <Route path="/quiz" exact component={total} />
         </Switch>
     </div>
      </BrowserRouter>

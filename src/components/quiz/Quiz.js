@@ -15,7 +15,7 @@ class Quiz extends React.Component
        
         score:0,
         disabled: true,
-        value:5
+        value:60
         }
         this._decrease();
     }

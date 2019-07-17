@@ -6,6 +6,8 @@ import Navbar from './components/navbar/NavbarContainer';
 import AddPlayers from './components/select players/AddPlayers';
 import Contests from "./components/contests";
 import pools from "./components/pools";
+import Instructions from './components/instructions/Instructions';
+import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
 
 class App extends React.Component {
 
@@ -20,6 +22,8 @@ class App extends React.Component {
           <Route path='/batsmen' component={AddPlayers} />
           <Route path="/CricketPool1" component={pools} />
           <Route path="/contests" component={Contests} />
+          <Route path="/instructions" component={Instructions}/>
+          <Route path="/signin" component={SignInModalLauncher} />  
         </Switch>
     </div>
      </BrowserRouter>

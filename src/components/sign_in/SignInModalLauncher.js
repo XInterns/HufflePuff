@@ -24,7 +24,7 @@ class ModalLauncher extends Component {
       
         return (
             <div>
-            <NavLink 
+            <NavLink to="/"
             className={classes.modalButton} 
             onClick={() => this.handleToggleModal()}
             >
@@ -34,6 +34,7 @@ class ModalLauncher extends Component {
             {/* {console.log("props"+ isLogged)} */}
             
             </div>  
+
         );
     }
 }

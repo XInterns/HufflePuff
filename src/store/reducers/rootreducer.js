@@ -3,7 +3,7 @@ import teamReducer from './teamReducer';
 import poolReducer from './poolReducer';
 import {combineReducers} from 'redux';
 import playerReducer from './playerReducer';
-import contestReducer from './constestReducer';
+import contestReducer from './contestReducer';
 
 const rootReducer = combineReducers({
     auth: authReducer,

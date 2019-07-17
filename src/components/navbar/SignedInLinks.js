@@ -34,7 +34,7 @@ class SignedInLinks extends Component{
 
 const mapStateToProps = (state) => {
     return{
-      isSignedIn: state.auth.isLogged
+      isSignedIn: state.auth.isLogged  
     }
   }
   

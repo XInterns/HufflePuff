@@ -3,18 +3,47 @@ import {QuizData} from './QuizData';
 import './Quizpage.css';
 // import  from './timer';
 import {NavLink} from 'react-router-dom'
-
+import {connect} from 'react-redux'
 class Quiz extends React.Component
 {
-    state = 
-    {
+    constructor(props){
+        super(props);
+        this.state={
         userAnswer: null,
         currentQuestion:0,
         options: [],
-        quizEnd: false,
+       
         score:0,
-        disabled: true
+        disabled: true,
+        value:5
+        }
+        this._decrease();
     }
+
+    _decrease(){
+        this.setState({value: this.state.value - 1});
+        if(this.state.value>0){
+          setTimeout(this._decrease.bind(this), 1000);
+        }
+      }
+
+    _nextComponent() {
+        if(this.state.value===0) {
+          this.props.endTimer();
+          if(this.props.quizEnd)
+            { 
+                return(
+                <div className="result">
+                    <div>Game Over The Final Score Is {this.props.quizScore * 10} </div>
+    
+                    <NavLink to="/" className="ui inverted button   ">Go Back</NavLink>
+                    
+                </div>
+                )
+            }
+        }
+      }
+   
 
     loadQuiz = () =>
     {
@@ -41,10 +70,11 @@ class Quiz extends React.Component
        console.log(this.state.currentQuestion)
 
        if (userAnswer === answers)
-       {
-           this.setState({
-               score:score+1
-           })
+       {        
+               this.setState({
+                   score: score+1,
+               })
+                this.props.quizScoreHandler(score);
        }
    }
    componentDidUpdate(prevProps , prevState)
@@ -71,17 +101,19 @@ class Quiz extends React.Component
    }
    finishHandler = () =>
    {
-       if(this.state.currentQuestion === QuizData.length -1)
-       this.setState({quizEnd:true})
+       if(this.state.currentQuestion === QuizData.length -1){
+           this.props.quizEndHandler();
+       }
+    //    this.setState({props.quizEnd})
    }
     render()
     {
-        const {questions, options , currentQuestion , userAnswer , quizEnd} = this.state;
-        if(quizEnd)
+        const {questions, options , currentQuestion , userAnswer , score} = this.state;
+        if(this.props.quizEnd)
         { 
             return(
             <div className="result">
-                <h2>Game Over The Final Score Is {this.state.score * 10} </h2>
+                <h2>Game Over The Final Score Is {score * 10} </h2>
 
                 <NavLink to="/" className="ui inverted button   ">Go Back</NavLink>
                 
@@ -92,6 +124,8 @@ class Quiz extends React.Component
 
         return (
             <div className="App">
+                 <h4> Time Remaining: {this.state.value} </h4>
+                 {this._nextComponent()}
                 <span className="ques-num">
                     {`Questions ${currentQuestion + 1} out of ${QuizData.length}`}
                 </span>
@@ -125,5 +159,21 @@ class Quiz extends React.Component
     }
 }
 
+const mapStateToProps =(state) => {
+    return{
+        quizEnd: state.quizEnd.quizEnd,
+        scoreUpdate: state.quizEnd.quizScore,
+        quizScore: state.quizEnd.quizScore,
+    }
+}
 
-export default Quiz;
+const mapDispatchToProps = (dispatch) => {
+    return{
+      quizEndHandler: () => dispatch({type: 'QUIZ_FINISH'}),
+      quizScoreHandler: (score) => dispatch({type: 'UPDATE_QUIZ_SCORE', payload: score}),
+      endTimer: () => dispatch({type:"TIMER_ZERO"})
+
+    }
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Quiz);

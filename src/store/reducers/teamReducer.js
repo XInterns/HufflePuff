@@ -1,5 +1,4 @@
 const initState = {
-    
 }
 
 const teamReducer = (state = initState, action) => {

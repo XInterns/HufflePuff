@@ -1,19 +1,24 @@
-import {games} from '../../assets/data/Data'
+import {games} from '../../assets/data/Data';
+import {user} from '../../assets/data/Data';
 
 const initState = {
-    games
+    games,
+    user
 }
 
 const contestReducer = (state = initState, action) => {
     // define actions for the state of a game by a user
     switch (action.type) {
-        case 'MATCH_CHOSEN':
-            return {...state,contestChosen: true}
-            // console.log('create project success');
-          
+        case 'GAME_CHOSEN':
+            console.log(action.payload);
+            return {
+                ...state,
+                user: { ...user, contests_selected: [...user.contests_selected, action.payload]}
+            };
+        //return {...state, user: [...state.user, obj]}  
         // complete object array..
-        default:    return state;
+        default: return state;
     }
-}
+}    
 
 export default contestReducer;

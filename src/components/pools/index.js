@@ -7,6 +7,7 @@ import SelectPlayerNavbar from "../select players/SelectPlayerNavbar";
 class pools extends Component {
   render() {
     const { choosePool } = this.props;
+    console.log(this.props);
     return (
       <div>
         <SelectPlayerNavbar id="select pool" heading="Select Pool" link="/CricketPool1" />
@@ -19,7 +20,8 @@ class pools extends Component {
 
 const mapStateToProps = (state) => {
   return{
-    choosePool: state.pool.pools
+    choosePool: state.pool.pools,
+    userData: state.contest.user
   }
 };
 

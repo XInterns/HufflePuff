@@ -7,13 +7,6 @@ const ContestCard = (props) => {
 
   
   const { index, pic, team_1, team_2, date, link} = props.game;
-
-  function handleGame(){
-    props.gameHandler();
-    // console.log(e.target.value);
-    // console.log(props)
-  }
-  
   return (
     <label htmlFor="join game button">
     <div id={`contestCard-${index}`} className="contestCard">
@@ -26,7 +19,7 @@ const ContestCard = (props) => {
         </p>
         <div className="game">
           <Link to={link}>
-            <button id="join game button" className="joinGame" value={index} onClick={handleGame}>Enter Game</button>
+            <button id="join game button" className="joinGame" value={index} onClick={() => props.gameHandler(props.game)}>Enter Game</button>
           </Link>
         </div>
       </div>
@@ -41,17 +34,16 @@ const ContestCard = (props) => {
 
 const mapStateToProps = (state) => {
   return{
-    isContestChosen: state.contest.games
+    contestChosen: state.contest.games,
+    userData: state.contest.user
   }
 }
 
-
 const mapDispatchToProps = (dispatch) => {
   return{
-    gameHandler: () => dispatch({type: 'GAME_CHOSEN'})
+    gameHandler: (game) => dispatch({type: 'GAME_CHOSEN', payload:game})
   }
 }
 //payload...
 
 export default connect(mapStateToProps,mapDispatchToProps)(ContestCard);
-// export default ContestCard;

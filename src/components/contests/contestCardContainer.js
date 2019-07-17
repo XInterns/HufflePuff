@@ -57,7 +57,7 @@ class ContestCardContainer extends Component {
               onClick={() => this.nextgame()}
               disabled={game.index === chooseContest.length - 1}
             >
-              {console.log("length:"+chooseContest.length)}
+              {/* {console.log("length:"+chooseContest.length)} */}
               <FontAwesomeIcon icon={faChevronRight} />
             </button>
           </div>

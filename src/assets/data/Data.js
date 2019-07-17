@@ -180,8 +180,7 @@ export const players = [
   }        
 ]
 
-export const user = 
-  {
+export const user = {
     user_details : {},
     players_selected : [],
     contests_selected : [],

@@ -13,7 +13,6 @@ class Instructions extends React.Component {
                <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Introduction</div>
                <div class="collapsible-body"><span>You can pick your own team made up of real players for Cricket, Football, Table Tennis. Create your team within a maximum budget of 100 credits. Your team earns points based on your chosen players' performance in the real-life matches. It's time to showcase your skill and go for glory!
                <br/>
-
 </span></div>
               </li>
               <li>

@@ -1,6 +1,7 @@
 import React from 'react'
 import PlayerCard from './PlayerCard';
 // import SelectPlayerNavbar from './SelectPlayerNavbar';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import './AddPlayers.css';
 
@@ -16,6 +17,9 @@ function AllRounder(props) {
                     
                 }
             })}
+            {/* <div>
+            <Link to = "/bidplaced"><button>BID IT</button></Link>
+            </div> */}
         </div>
     )
 }
@@ -23,8 +27,8 @@ function AllRounder(props) {
 const mapStateToProps = (state) => {
     return{
       choosePlayer: state.player.players,
-      userPoolData: state.pool.user,
-      userData: state.contest.user
+    //   userPoolData: state.pool.user,
+    //   userData: state.contest.user
     }
   };
   

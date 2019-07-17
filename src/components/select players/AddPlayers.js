@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import PlayerCard from './PlayerCard';
 import SelectPlayerNavbar from './SelectPlayerNavbar';
 import Batsmen from './Batsmen';
 import WicketKeeper from './WicketKeeper';
 import Bowler from './Bowler';
-import './AddPlayers.css'
 import AllRounder from './AllRounder';
+import './AddPlayers.css';
 
 const AddPlayers=() => {
     return (

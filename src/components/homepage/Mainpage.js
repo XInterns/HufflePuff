@@ -2,6 +2,7 @@ import React from 'react';
 import ImageDivs from './ImageDivs';
 import Section from './Section';
 import {connect} from 'react-redux';
+import './ImageDivs.css'
 // import  {BrowserRouter,  Switch, Route } from 'react-router-dom';
 // import Contests from "../../components/contests";
 // import AddPlayers from '../select players/AddPlayers';

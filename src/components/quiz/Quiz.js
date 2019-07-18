@@ -4,6 +4,8 @@ import './Quizpage.css';
 // import  from './timer';
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
+
+var count=0;
 class Quiz extends React.Component
 {
     constructor(props){
@@ -53,7 +55,6 @@ class Quiz extends React.Component
                 questions:QuizData[currentQuestion].question,
                 options:QuizData[currentQuestion].options,
                 answers:QuizData[currentQuestion].answer
-
             };
         })
    }
@@ -62,7 +63,7 @@ class Quiz extends React.Component
        this.loadQuiz();
    }
    nextQuestionHandler = () =>{
-       const {userAnswer,answers,score}=this.state;
+       const {userAnswer,answers, score}=this.state;
        this.setState({
            currentQuestion: this.state.currentQuestion + 1
 
@@ -74,7 +75,8 @@ class Quiz extends React.Component
                this.setState({
                    score: score+1,
                })
-                this.props.quizScoreHandler(score);
+            count= count+1;
+                this.props.quizScoreHandler(count);
        }
    }
    componentDidUpdate(prevProps , prevState)
@@ -170,7 +172,7 @@ const mapStateToProps =(state) => {
 const mapDispatchToProps = (dispatch) => {
     return{
       quizEndHandler: () => dispatch({type: 'QUIZ_FINISH'}),
-      quizScoreHandler: (score) => dispatch({type: 'UPDATE_QUIZ_SCORE', payload: score}),
+      quizScoreHandler: (count) => dispatch({type: 'UPDATE_QUIZ_SCORE', payload: count}),
       endTimer: () => dispatch({type:"TIMER_ZERO"})
 
     }

@@ -4,7 +4,7 @@ import poolReducer from './poolReducer';
 import {combineReducers} from 'redux';
 import playerReducer from './playerReducer';
 import adminReducer from './adminReducer';
-import contestReducer from './constestReducer';
+import contestReducer from './contestReducer';
 import quizEndReducer from './quizEndReducer';
 
 const rootReducer = combineReducers({

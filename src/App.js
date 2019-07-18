@@ -8,11 +8,17 @@ import Contests from "./components/contests";
 import pools from "./components/pools";
 import Instructions from './components/instructions/Instructions';
 import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
+// // import Quiz from './components/quiz/Quiz';
+// import QuizStart from './components/quiz/QuizStart';
+// import total from './components/quiz/quiztest';
+import AdminPage from './components/admin/AdminPage';
 // import Quiz from './components/quiz/Quiz';
 import QuizStart from './components/quiz/QuizStart';
 import total from './components/quiz/quiztest';
-import AdminPage from './components/admin/AdminPage';
-
+import Instructions from './components/instructions/Instructions';
+import Bid from './components/confirm bidding/bid'
+import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
+import SignOutConfirmationModal from './components/navbar/SignOutConfirmationModal';
 
 class App extends React.Component {
 
@@ -23,7 +29,7 @@ class App extends React.Component {
       <Navbar/>
         <Switch>
           <Route exact path='/' component={Mainpage} />
-          {/* <Route path='/signup' component={SignUp }/> */}
+          {/* <Route path='/signup' component={SignUp}/> */}
           <Route path='/batsmen' component={AddPlayers} />
           <Route path="/CricketPool1" component={pools} />
           <Route path="/contests" component={Contests} />
@@ -34,6 +40,8 @@ class App extends React.Component {
           <Route path="/quizStart" exact component={QuizStart} />
           <Route path="/quiz" exact component={total} />
           <Route path="/admin" exact component={AdminPage} />
+          <Route path="/bidplaced" component={Bid}/>
+          <Route path='/SignOutConfirmation' component={SignOutConfirmationModal} />  
         </Switch>
     </div>
      </BrowserRouter>

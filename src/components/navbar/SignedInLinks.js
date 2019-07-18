@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import './SignedOutLinks.css';
-import './SignedInLinks.css';
+// import './SignedInLinks.css';
 import 'firebase/auth';
 import firebase from "firebase/app";
 import fbconfig from '../sign_in/config/firebaseConfig';

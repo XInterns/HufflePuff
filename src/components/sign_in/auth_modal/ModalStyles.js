@@ -3,9 +3,6 @@ export default {
     '@global': {
       'body': { overflowY: 'scroll' },
     },
-
-
-  
     
     // The modal wrapper: absolute positioning,
     // 100% of the browser window height and width.

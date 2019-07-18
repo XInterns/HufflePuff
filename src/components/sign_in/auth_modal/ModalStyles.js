@@ -1,7 +1,7 @@
 export default {
     // Prevent page scrolling when modal is open.
     '@global': {
-      'body': { overflow: 'hidden' },
+      'body': { overflowY: 'scroll' },
     },
 
 

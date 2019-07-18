@@ -1,16 +1,28 @@
-import {pools} from '../../assets/data/ContestData';
+import {games} from '../../assets/data/Data';
+import {pools} from '../../assets/data/Data';
+import {players} from '../../assets/data/Data';
+import {user} from '../../assets/data/Data';
 
 const initState = {
-    pools
-    // pools: [
-    //     {    id: 'cp001', entry: 10, prize: 100, chosen:false },
-    //     {    id: 'cp002', entry: 15, prize: 200, chosen:false },
-    //     {    id: 'cp003', entry: 50, prize: 500, chosen:false }        
-    // ]
+    games,
+    players,
+    pools,
+    user
 }
 
 const poolReducer = (state = initState, action) => {
-    return state;
-}
+    switch (action.type) {
+        case 'POOL_CHOSEN':
+            //  console.log("action.payload: "+action.payload);
+            return {
+                ...state,
+                user: { ...state.user,
+                pools_selected: [...user.pools_selected, action.payload]}
+            };
+            //return {...state, user: [...state.user, obj]}  
+        default: return state;
+    }
+}   
+
 
 export default poolReducer;

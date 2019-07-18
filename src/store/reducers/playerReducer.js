@@ -1,52 +1,28 @@
-const initState = {
+import {games} from '../../assets/data/Data';
+import {pools} from '../../assets/data/Data';
+import {players} from '../../assets/data/Data';
+import {user} from '../../assets/data/Data';
 
-    players: [
-      {
-        playerid: "001",
-        team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Virat Kohli",
-        type:"batsman"
-       
-        
-      },
-      {
-        playerid: "002",
-        team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Sachin",
-        type:"bowler"
-        
-      },
-      {
-        playerid: "003",
-        team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Dhoni",
-        type:"allrounder"
-        
-      },
-      {
-        playerid: "004",
-        team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Rahul",
-        type:"wicketkeeper"
-        
-      },
-      {
-        playerid: "005",
-        team: "India",
-        pic:"https://www.jagranjosh.com/imported/images/E/Articles/virat_kohli.jpg",
-        name: "Anushka",
-        type:"allrounder"
-        
-      }
-    ]
-  }
+const initState = {
+    games,
+    players,
+    pools,
+    user
+}
 
 const playerReducer = (state = initState, action) => {
-    return state;
+  switch (action.type) {
+    case 'PLAYER_CHOSEN':
+        //  console.log("action.payload: "+action.payload);
+        return {
+            ...state,
+            user: { ...state.user, 
+              players_selected: [...state.user.players_selected.slice(0,action.index), action.payload]}
+            // user: { ...user, players_selected: [...user.players_selected, action.payload]}
+        };
+        //return {...state, user: [...state.user, obj]}  
+    default: return state;
 }
+}   
 
 export default playerReducer;

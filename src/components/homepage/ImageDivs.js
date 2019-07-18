@@ -21,9 +21,11 @@ const ImageDivs=(props) => {
                {(classname==="pimg1") ? (
                     <div> </div>
                 )
-                :(<button className="button">
+                :(<NavLink to="/instructions">
+                  <button className="button">
                     <span>INSTRUCTIONS</span>
-                  </button> )}
+                  </button>
+                </NavLink> )}
 
             </div>
            

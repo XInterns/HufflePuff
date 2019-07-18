@@ -2,13 +2,10 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoins, faHandPointRight } from "@fortawesome/free-solid-svg-icons";
+import {connect} from 'react-redux';
 
 const PoolCard = props => {
-
-  function handleClick(e){
-    console.log(e.target.value);
-    // change the state of the chosen --> true
-  }
+  // console.log("incoming props:"+props);
   return (
     
     <div className="pool_card">
@@ -24,10 +21,16 @@ const PoolCard = props => {
         <div className="pool-price">{props.entry}</div>
         <FontAwesomeIcon icon={faCoins} className="chotaCoin"/>
       </div>
-      <Link to = "/batsmen"><button className="join-pool-button" value={props.value} onClick={handleClick}>JOIN POOL</button></Link>
+      <Link to = "/batsmen"><button className="join-pool-button" value={props.value} onClick={() => props.poolHandler(props)}>JOIN POOL</button></Link>
     </div>
     
   );
 };
 
-export default PoolCard;
+const mapDispatchToProps = (dispatch) => {
+  return{
+    poolHandler: (props) => dispatch({type: 'POOL_CHOSEN', payload:props})
+  }
+}
+
+export default connect(null,mapDispatchToProps)(PoolCard);

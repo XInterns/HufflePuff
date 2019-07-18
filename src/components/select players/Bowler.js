@@ -7,7 +7,7 @@ import './AddPlayers.css';
 function Bowler(props) {
     const {choosePlayer} = props;
     return (
-        <div className="batsmenb">
+        <div className="batsmen">
             { choosePlayer && choosePlayer.map(bowler => {
                 if((bowler.team === 'India' || bowler.team === 'Bangladesh') && bowler.type === 'bowler'){
                     console.log(bowler.type)

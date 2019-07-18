@@ -1,12 +1,5 @@
 export default {
-    // Prevent page scrolling when modal is open.
-    '@global': {
-      'body': { overflow: 'hidden' },
-    },
 
-
-  
-    
     // The modal wrapper: absolute positioning,
     // 100% of the browser window height and width.
     modalOverlay: {

@@ -4,7 +4,7 @@ import SignedInLinks from './SignedInLinks';
 import SignedOutLinks from './SIgnedOutLinks';
 import { connect } from 'react-redux';
 import ModalLauncher from '../sign_in/SignInModalLauncher';
-
+import {NavLink} from 'react-router-dom';
 const Navbar=(props)=> {
     const { isLogged } = props;
     return(
@@ -14,10 +14,14 @@ const Navbar=(props)=> {
                <li><Link to='/' className="brand-logo center">
                     XPL
                 </Link></li> 
-                { isLogged ? (
-               <li className="right"> <SignedInLinks/> </li>):(
-
-               <li className="right"> <ModalLauncher/></li>)
+                { isLogged 
+                ? (
+               <li className="right"> <SignedInLinks/> </li>)
+                : (
+               <div> 
+                 <li className="right"> <ModalLauncher/></li>
+                 <li> <NavLink to = "/admin"> Admin </NavLink></li>
+               </div>)
                 }
                 </ul>
                 {/* {console.log("in Navbar",{isLogged})} */}

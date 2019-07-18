@@ -11,6 +11,7 @@ import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
 // import Quiz from './components/quiz/Quiz';
 import QuizStart from './components/quiz/QuizStart';
 import total from './components/quiz/quiztest';
+import AdminPage from './components/admin/AdminPage';
 
 
 class App extends React.Component {
@@ -32,6 +33,7 @@ class App extends React.Component {
           {/* <Route path="/quiz" exact component={Quiz} /> */}
           <Route path="/quizStart" exact component={QuizStart} />
           <Route path="/quiz" exact component={total} />
+          <Route path="/admin" exact component={AdminPage} />
         </Switch>
     </div>
      </BrowserRouter>

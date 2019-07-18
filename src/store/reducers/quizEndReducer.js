@@ -21,6 +21,7 @@ const quizEndReducer= (state = initState, action)=> {
         return {
             ...state,
             quizScore: action.payload,
+            totalScore: 100 + action.payload,
         }
         default:
             return state;

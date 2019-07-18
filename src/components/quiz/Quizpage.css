@@ -3,18 +3,17 @@
 
 
 
-.App {
+.Quizapp {
     /* font-family: sans-serif; */
     font-family: 'Varela Round', sans-serif;
     text-align: center;
-    color: white;
+    color: rgb(10, 10, 10);
   }
   body {
-    
     overflow: scroll;
-    background: #aa076b;
-    background: -webkit-linear-gradient(to right, #aa076b, #61045f); 
-    background: linear-gradient(to right, #aa076b, #bc85bb); 
+    /* background: #aa076b; */
+    /* background: -webkit-linear-gradient(to right, #aa076b, #61045f);  */
+    /* background: linear-gradient(to right, #aa076b, #bc85bb);  */
   }
 
   
@@ -32,18 +31,41 @@
   ul {
     list-style-type: none;
   }
-  .ques-diaplay
+  .ques-display
   {
     font-size: 3rem;
+    height: 30%;
   }
   .result
   {
     color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .ques-num
   {
     font-size: 2rem;
     padding: 0%;
   }
-  
 
+  .endmessage{
+    color: black;
+  }
+  
+.options {
+  background-color: #6C2A57;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-bottom: 10px solid white ;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

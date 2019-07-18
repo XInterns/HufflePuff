@@ -10,7 +10,7 @@ const Navbar=(props)=> {
     return(
         <nav className="nav-wrapper grey darken-3">
             
-                <ul id="nav-mobile" className="right hide-on-med-and-down">
+               <ul id="nav-mobile" className="right hide-on-med-and-down">
                <li><Link to='/' className="brand-logo center">
                     XPL
                 </Link></li> 

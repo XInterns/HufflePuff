@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import './SignedOutLinks.css';
-// import './SignedInLinks.css';
+import './SignedInLinks.css';
 import 'firebase/auth';
 import firebase from "firebase/app";
 import fbconfig from '../sign_in/config/firebaseConfig';
@@ -31,8 +31,11 @@ class SignedInLinks extends Component{
             <li>
             {/* <NavLink to="/" exact className="btn btn-floating pink lighten-1"> */}
             <li> Your Points: {this.props.totalScore}</li>
+            <li>
             <NavLink to="/" exact className="uprofile">
-            <img alt="profile-pic" src={firebase.auth().currentUser.photoURL}/></NavLink> </li>
+            <img alt="profile-pic" src={firebase.auth().currentUser.photoURL}/></NavLink> 
+            </li>
+            </li>
         </ul>
         )
     }

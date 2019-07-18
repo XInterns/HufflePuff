@@ -79,6 +79,7 @@ class Quiz extends React.Component
                 this.props.quizScoreHandler(count);
        }
    }
+
    componentDidUpdate(prevProps , prevState)
    {
        const {currentQuestion} = this.state;
@@ -115,7 +116,7 @@ class Quiz extends React.Component
         { 
             return(
             <div className="result">
-                <h2>Game Over The Final Score Is {score * 10} </h2>
+                <h2 className="endmessage">Game Over The Final Score is: {score * 10} </h2>
 
                 <NavLink to="/" className="ui inverted button   ">Go Back</NavLink>
                 
@@ -125,25 +126,26 @@ class Quiz extends React.Component
 
 
         return (
-            <div className="App">
+            <div className="Quizapp">
                  <h4> Time Remaining: {this.state.value} </h4>
                  {this._nextComponent()}
                 <span className="ques-num">
                     {`Questions ${currentQuestion + 1} out of ${QuizData.length}`}
                 </span>
-                <h2 className="ques-diaplay">{questions}</h2>
+                <h2 className="ques-display">{questions}</h2>
                 
-                    {options.map(option => (
-                        <p
+                <div className="optionsContainer">
+                {options.map(option => (
+                        <div
                         key={option.id}
-                        className={`ui floating message options
+                        className={`options 
                    ${userAnswer === option ? "selected" : null}
                    `} 
                    onClick={() => this.checkAnswer(option)}>
                             {option}
-                        </p>
+                        </div>
                     ))}
-                    
+                </div>
                     
                     { currentQuestion < QuizData.length -1 && (
                     <button className="ui inverted button" dsiabled ={this.state.disabled} onClick={this.nextQuestionHandler}>

@@ -12,10 +12,6 @@ import QuizStart from './components/quiz/QuizStart';
 import total from './components/quiz/quiztest';
 // import Bid from './components/confirm bidding/bid'
 // import SignOutConfirmationModal from './components/navbar/SignOutConfirmationModal';
-import QuizStart from './components/quiz/QuizStart';
-import total from './components/quiz/quiztest';
-import AdminPage from './components/admin/AdminPage';
-
 
 class App extends React.Component {
 

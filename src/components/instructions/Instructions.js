@@ -8,17 +8,16 @@ class Instructions extends React.Component {
     return (
 
         <div >
-             <ul class="collapsible">
+             <ul className="collapsible">
               <li>
-               <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Introduction</div>
-               <div class="collapsible-body"><span>You can pick your own team made up of real players for Cricket, Football, Table Tennis. Create your team within a maximum budget of 100 credits. Your team earns points based on your chosen players' performance in the real-life matches. It's time to showcase your skill and go for glory!
+               <div className="collapsible-header"><i className="material-icons">keyboard_arrow_down</i>Introduction</div>
+               <div className="collapsible-body"><span>You can pick your own team made up of real players for Cricket, Football, Table Tennis. Create your team within a maximum budget of 100 credits. Your team earns points based on your chosen players' performance in the real-life matches. It's time to showcase your skill and go for glory!
                <br/>
-
 </span></div>
               </li>
               <li>
-                <div class="collapsible-header"><i class="material-icons">keyboard_arrow_down</i>Create Your Team</div>
-                <div class="collapsible-body"><span>
+                <div className="collapsible-header"><i className="material-icons">keyboard_arrow_down</i>Create Your Team</div>
+                <div className="collapsible-body"><span>
                 <b>Step 1: Select a Contest</b><br/>
                 Select any upcoming match from the list of ongoing and upcoming series<br/><br/>
                 
@@ -40,10 +39,11 @@ class Instructions extends React.Component {
               </li>
               
               <li>
-                <div class="collapsible-header"><i class="material-icons"> keyboard_arrow_down</i>Points System</div>
-                <div class="collapsible-body points"><span>
+                <div className="collapsible-header"><i className="material-icons"> keyboard_arrow_down</i>Points System</div>
+                <div className="collapsible-body points"><span>
                   
                   <table>
+                    <tbody>
                     <tr>
                     <th>Type of Points</th>
                     <th>Points</th>
@@ -83,15 +83,15 @@ class Instructions extends React.Component {
                       <td>Dismissal for a Duck (only for batsmen, wicket-keepers and all-rounders)</td>
                       <td>-2</td>
                     </tr>
-
+                    </tbody>
                   </table>
                   
                   </span></div>
                   </li>
 
               <li>
-                <div class="collapsible-header"><i class="material-icons"> keyboard_arrow_down</i>FAQ</div>
-                <div class="collapsible-body"><span>
+                <div className="collapsible-header"><i className="material-icons"> keyboard_arrow_down</i>FAQ</div>
+                <div className="collapsible-body"><span>
                 <b> How many  teams can I create with the same email Id?</b><br/>
 
                 You can create only one account with one email id . Creation of multiple accounts by a single gamer is strictly prohibited and violates our FairPlay policy.

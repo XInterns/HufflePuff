@@ -4,8 +4,6 @@ import PoolCard from "./poolCard";
 const PoolCardContainer = ({ choosePools }) => {
   return (
     <div>
-
-      
       <div className="poolContainer">
         { choosePools && choosePools.map(p => {
           return(

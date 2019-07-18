@@ -44,6 +44,5 @@ const mapDispatchToProps = (dispatch) => {
     gameHandler: (game) => dispatch({type: 'GAME_CHOSEN', payload:game})
   }
 }
-//payload...
 
 export default connect(mapStateToProps,mapDispatchToProps)(ContestCard);

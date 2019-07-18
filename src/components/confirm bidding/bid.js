@@ -7,16 +7,17 @@ class Bid extends React.Component {
   render() {
     return (
 
-        <div >
-             <ul class="collapsible">
+        <div>
+             <ul className="collapsible">
               <li>
-                <div class="collapsible-header"><i class="material-icons"> keyboard_arrow_down</i>Player Info</div>
-                <div class="collapsible-body points"><span>
+                <div className="collapsible-header"><i className="material-icons"> keyboard_arrow_down</i>Player Info</div>
+                <div className="collapsible-body points"><span>
                   
                   <table>
                     <tr>
                     <th>Players</th>
                     <th>Points</th>
+
                     </tr>
                     <tr>
                       <td>Being a part of the starting XI</td>

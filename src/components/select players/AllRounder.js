@@ -17,9 +17,6 @@ function AllRounder(props) {
                     
                 }
             })}
-            {/* <div>
-            <Link to = "/bidplaced"><button>BID IT</button></Link>
-            </div> */}
         </div>
     )
 }

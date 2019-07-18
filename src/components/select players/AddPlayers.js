@@ -6,6 +6,7 @@ import WicketKeeper from './WicketKeeper';
 import Bowler from './Bowler';
 import AllRounder from './AllRounder';
 import './AddPlayers.css';
+// import Bid from '../confirm bidding/bid';
 
 const AddPlayers=() => {
     return (
@@ -17,6 +18,7 @@ const AddPlayers=() => {
                     <Route path='/wicketKeeper' component={WicketKeeper} />
                     <Route path='/bowler' component={Bowler} />
                     <Route path='/allRounder' component={AllRounder} />
+                    {/* <Route path="/bidplaced" component={Bid}/> */}
                 </Switch>
             </div>
         </BrowserRouter>

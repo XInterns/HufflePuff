@@ -9,6 +9,7 @@ import pools from "./components/pools";
 import Instructions from './components/instructions/Instructions';
 import Bid from './components/confirm bidding/bid'
 import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
+import SignOutConfirmationModal from './components/navbar/SignOutConfirmationModal';
 
 class App extends React.Component {
 
@@ -19,12 +20,13 @@ class App extends React.Component {
       <Navbar/>
         <Switch>
           <Route exact path='/' component={Mainpage} />
-          {/* <Route path='/signup' component={SignUp }/> */}
+          {/* <Route path='/signup' component={SignUp}/> */}
           <Route path='/batsmen' component={AddPlayers} />
           <Route path="/CricketPool1" component={pools} />
           <Route path="/contests" component={Contests} />
-          <Route path="/instructions" component={Bid}/>
-          {/* <Route path='/bidplaced' component={Bid} /> */}
+          <Route path="/instructions" component={Instructions}/>
+          <Route path="/bidplaced" component={Bid}/>
+          <Route path='/SignOutConfirmation' component={SignOutConfirmationModal} />
           <Route path="/signin" component={SignInModalLauncher} />  
         </Switch>
     </div>

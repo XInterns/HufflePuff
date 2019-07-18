@@ -1,0 +1,10 @@
+.uprofile img{
+    display: inline-block;
+    border-radius: 80%;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    line-height: 30px;
+}

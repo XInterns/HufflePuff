@@ -16,7 +16,9 @@ const playerReducer = (state = initState, action) => {
         //  console.log("action.payload: "+action.payload);
         return {
             ...state,
-            user: { ...user, players_selected: [...user.players_selected, action.payload]}
+            user: { ...state.user, 
+              players_selected: [...state.user.players_selected.slice(0,action.index), action.payload]}
+            // user: { ...user, players_selected: [...user.players_selected, action.payload]}
         };
         //return {...state, user: [...state.user, obj]}  
     default: return state;

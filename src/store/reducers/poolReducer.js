@@ -16,7 +16,8 @@ const poolReducer = (state = initState, action) => {
             //  console.log("action.payload: "+action.payload);
             return {
                 ...state,
-                user: { ...user, pools_selected: [...user.pools_selected, action.payload]}
+                user: { ...state.user,
+                pools_selected: [...user.pools_selected, action.payload]}
             };
             //return {...state, user: [...state.user, obj]}  
         default: return state;

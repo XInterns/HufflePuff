@@ -59,6 +59,7 @@ a:hover {
     transform: scale(1.2);
     transition-duration: .6s;
 }
+
 .border{
     background-color:#6D2C60;
     color:#fff;
@@ -76,11 +77,13 @@ a:hover {
     text-transform:uppercase;
     font-weight: 900px;
   }
+
   .ptextXPL {
       top:34.5%;
       font-size:20px;
       font-weight: 1200px;
   }
+  
   .ptext{
     top:70%;
     left: 20%;

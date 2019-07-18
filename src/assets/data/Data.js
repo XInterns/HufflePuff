@@ -9,7 +9,6 @@ export const games = [
       date: "05-07-19",
       link: "/CricketPool1",
       pool_value:'pool001',
-      contestChosen: false
       
     },
     {
@@ -22,7 +21,6 @@ export const games = [
       date: "11-07-19",
       link: "/CricketPool2",
       pool_value:'pool002',
-      contestChosen: false
     },
     {
       _id: "003",
@@ -33,7 +31,6 @@ export const games = [
       date: "15-07-19",
       link: "/CricketPool3",
       pool_value:'pool003',
-      contestChosen: false
     },
     {
       _id: "004",
@@ -44,7 +41,6 @@ export const games = [
       date: "17-07-19",
       link: "/CricketPool4",
       pool_value:'pool004',
-      contestChosen: false
     },
     {
       _id: "005",
@@ -56,18 +52,13 @@ export const games = [
       date: "21-07-19",
       link: "/CricketPool5",
       pool_value:'pool005',
-      contestChosen: false
     }
   ]
 
-export const contests = [
-  { id: 'cc001', sport:'cricket', teamA:'india', teamB:'bangladesh' }
-]
-
 export const pools = [
-  {    id: 'cp001', entry: 10, prize: 100, chosen:false },
-  {    id: 'cp002', entry: 15, prize: 200, chosen:false },
-  {    id: 'cp003', entry: 50, prize: 500, chosen:false }        
+  {    id: 'cp001', entry: 10, prize: 100},
+  {    id: 'cp002', entry: 15, prize: 200},
+  {    id: 'cp003', entry: 50, prize: 500}        
 ]
 
 export const players = [
@@ -188,3 +179,10 @@ export const players = [
     
   }        
 ]
+
+export const user = {
+    user_details : {},
+    players_selected : [],
+    contests_selected : [],
+    pools_selected : [],
+  }

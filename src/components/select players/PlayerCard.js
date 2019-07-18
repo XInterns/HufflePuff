@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import './PlayerCard.css'
 
 class PlayerCard extends React.Component {
@@ -10,10 +11,13 @@ class PlayerCard extends React.Component {
 
    }
 
-   toggleClass(){
+   toggleClass(player){
      const currentState = this.state.active;
      this.setState({active:!currentState});
+     console.log(this.props.userPlayer);
+    this.props.playerHandler(player);
    }
+
    render(){
      const {playerform} = this.props;
     return(
@@ -26,8 +30,9 @@ class PlayerCard extends React.Component {
              <div className="hvrbox-text">{playerform.playerinfo}</div> 
           </div>          
              
-             <button className="btn-floating halfway-fab waves-effect waves-light red" onClick={this.toggleClass.bind(this)}><i className="material-icons">add</i></button>
+          <button className="btn-floating halfway-fab waves-effect waves-light red" onClick={this.toggleClass.bind(this)}><i className="material-icons">add</i></button>
           <p> Player credit: 11 pts</p>
+          <button className="btn-floating halfway-fab waves-effect waves-light red" onClick={() => this.toggleClass(playerform)}><i className="material-icons">add</i></button>
         </div>
         <div className="card-content">
         </div>
@@ -38,5 +43,18 @@ class PlayerCard extends React.Component {
     
 }
 
-export default PlayerCard;
+
+const mapStateToProps = (state) => {
+  return{
+    userPlayer: state.player.user,
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return{
+    playerHandler: (props) => dispatch({type: 'PLAYER_CHOSEN', payload:props})
+  }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(PlayerCard);
 

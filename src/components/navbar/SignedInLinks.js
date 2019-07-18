@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import './SignedOutLinks.css';
+// import './SignedInLinks.css';
 import 'firebase/auth';
 import firebase from "firebase/app";
 import fbconfig from '../sign_in/config/firebaseConfig';
@@ -19,14 +20,19 @@ class SignedInLinks extends Component{
     return(
         <ul className="right">
             {/* <li><NavLink to="/batsmen" exact>Select Team </NavLink> </li> */}
+            <li><NavLink to="/quizStart" exact>Play Quiz</NavLink> </li>
+            {/* <li><NavLink to="/" exact> Sign Out</NavLink> </li> */}
             {/* <li><NavLink to="/" exact>Sign Out</NavLink> </li> */}
+            <li><NavLink to="/bidplaced" >BID IT</NavLink> </li>
             {/* route/redirect on signout to homepage  */}
-            <li><NavLink activeStyle={{color:'orange'}}
-            onClick={() => this.handleSignout()}>
-            Sign Out
-            </NavLink>
+            <li> 
+              <NavLink activeStyle={{color:'orange'}} onClick={() => this.handleSignout()}> Sign Out</NavLink>
             </li>
-            <li><NavLink to="/" exact className="btn btn-floating pink lighten-1">NN</NavLink> </li>
+            <li>
+            {/* <NavLink to="/" exact className="btn btn-floating pink lighten-1"> */}
+            <li> Your Points: {this.props.totalScore}</li>
+            <NavLink to="/" exact className="uprofile">
+            <img alt="profile-pic" src={firebase.auth().currentUser.photoURL}/></NavLink> </li>
         </ul>
         )
     }
@@ -34,7 +40,8 @@ class SignedInLinks extends Component{
 
 const mapStateToProps = (state) => {
     return{
-      isSignedIn: state.auth.isLogged
+      isSignedIn: state.auth.isLogged,
+      totalScore: state.quizEnd.totalScore
     }
   }
   

@@ -77,7 +77,7 @@ export const players = [
     pic:"https://www.cricket.com.au/-/media/Players/Men/International/India/ODIWC19/Rohit-Sharma-CWC19.ashx",
     name: "Rohit Sharma",
     type:"batsman",
-    playerinfo:"Rohit Sharma oozes batting talent: malleable wrists, knack to find the gaps, and the extra half a second when he plays his shots. However, for a player of his class, the first six years of his international career were frustrating for him, the team, and the spectators, as the odd delightful innings was followed and preceded by plenty of failures. It all came together finally in 2013, when Rohit was promoted to open the innings in ODIs. The move turned out to be a masterstroke, as Rohit found form in the Champions Trophy, and then went into overdrive in the ODI series against Australia, scoring two centuries, including 209, only the third double in ODI cricket.",
+    playerinfo:"Rohit Sharma oozes batting talent: malleable wrists, knack to find the gaps, and the extra half a second when he plays his shots.",
     selected : "false"        
   },
   {

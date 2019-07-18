@@ -18,14 +18,18 @@ class PlayerCard extends React.Component {
      const {playerform} = this.props;
     return(
       <div className={this.state.active?"col s12 m6 pcard ":"col s12 m6 pcard selected"}>
-      <div className="card cardContainer">
-        <div className="card-image">
-        <img src={playerform.pic}></img>
+      <div className="card cardContainer ">
+        <div className="card-image hvrbox">
+        <img src={playerform.pic} className="hvrbox-layer_bottom"  ></img>
           <span className="card-title">{playerform.name}</span>
-          <button className="btn-floating halfway-fab waves-effect waves-light red" onClick={this.toggleClass.bind(this)}><i className="material-icons">add</i></button>
+          <div className="hvrbox-layer_top">         
+             <div className="hvrbox-text">{playerform.playerinfo}</div> 
+          </div>          
+             
+             <button className="btn-floating halfway-fab waves-effect waves-light red" onClick={this.toggleClass.bind(this)}><i className="material-icons">add</i></button>
+          <p> Player credit: 11 pts</p>
         </div>
         <div className="card-content">
-          <p> Player credit: 11 pts</p>
         </div>
       </div>
       </div> 

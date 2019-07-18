@@ -16,7 +16,8 @@ const contestReducer = (state = initState, action) => {
             // console.log(action.payload);
             return {
                 ...state,
-                user: { ...user, contests_selected: [...user.contests_selected, action.payload]}
+                user: { ...state.user,
+                contests_selected: [...user.contests_selected.slice(0,action.index), action.payload]}
             }
         default: return state;
     }

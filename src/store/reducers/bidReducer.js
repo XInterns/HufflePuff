@@ -10,9 +10,9 @@ const initState = {
     user
 }
 
-const poolReducer = (state = initState, action) => {
+const bidReducer = (state = initState, action) => {
     switch (action.type) {
-        case 'POOL_CHOSEN':
+        case 'BID_PLACED':
             //  console.log("action.payload: "+action.payload);
             return {
                 ...state,
@@ -24,5 +24,4 @@ const poolReducer = (state = initState, action) => {
     }
 }   
 
-
-export default poolReducer;
+export default bidReducer;

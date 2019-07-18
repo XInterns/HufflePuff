@@ -12,12 +12,9 @@ import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
 // import QuizStart from './components/quiz/QuizStart';
 // import total from './components/quiz/quiztest';
 import AdminPage from './components/admin/AdminPage';
-// import Quiz from './components/quiz/Quiz';
 import QuizStart from './components/quiz/QuizStart';
 import total from './components/quiz/quiztest';
-import Instructions from './components/instructions/Instructions';
 import Bid from './components/confirm bidding/bid'
-import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
 import SignOutConfirmationModal from './components/navbar/SignOutConfirmationModal';
 
 class App extends React.Component {

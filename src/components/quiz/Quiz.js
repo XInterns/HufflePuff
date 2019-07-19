@@ -166,9 +166,9 @@ class Quiz extends React.Component
 
 const mapStateToProps =(state) => {
     return{
-        quizEnd: state.quizEnd.user.user_score.quizEnd,
-        scoreUpdate: state.quizEnd.user.user_score.quizScore,
-        quizScore: state.quizEnd.user.user_score.quizScore,
+        quizEnd: state.quizEnd.quizEnd,
+        scoreUpdate: state.quizEnd.quizScore,
+        quizScore: state.quizEnd.quizScore,
     }
 }
 

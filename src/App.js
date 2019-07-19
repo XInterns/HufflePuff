@@ -30,7 +30,6 @@ class App extends React.Component {
           <Route path="/bid" component={Bid}/>
           <Route path="/signin" component={SignInModalLauncher} />  
           <Route path="/contests" exact component={Contests} />
-          {/* <Route path="/quiz" exact component={Quiz} /> */}
           <Route path="/quizStart" exact component={QuizStart} />
           <Route path="/quiz" exact component={total} />
           <Route path="/admin" exact component={AdminPage} />

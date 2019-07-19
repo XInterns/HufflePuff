@@ -201,9 +201,9 @@ export const user = {
     players_selected : [],
     contests_selected : [],
     pools_selected : [],
-    user_score:{
-      quizEnd: false,
-      quizScore: 0,
-      totalScore: 100
-    }
+    // user_score:{
+    //   quizEnd: false,
+    //   quizScore: 0,
+    //   totalScore: 100
+    // }
   }

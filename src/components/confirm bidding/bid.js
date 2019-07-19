@@ -71,7 +71,7 @@ const mapStateToProps = (state) => {
     userPlayers: state.player.user.players_selected,
     userContests: state.contest.user.contests_selected,
     userPools: state.contest.user.pools_selected,
-    userScore: state.quizEnd.user.user_score,
+    userScore: state.quizEnd,
   }
 };
 

@@ -4,9 +4,7 @@ import {
   faChevronRight,
   faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
-
 import "./contests.css";
-// import {games} from "../../assets/data/Data";
 import {connect} from 'react-redux';
 import ContestCard from "./contestCard";
 

@@ -1,11 +1,8 @@
 export default {
-    // Prevent page scrolling when modal is open.
     '@global': {
-      'body': { overflowY: 'scroll' },
+      'body': { overflowY: 'hidden' },
     },
     
-    // The modal wrapper: absolute positioning,
-    // 100% of the browser window height and width.
     modalOverlay: {
       display: 'flex',
       alignItems: 'center',
@@ -39,7 +36,6 @@ export default {
       },
     },
   
-    // The modal window: a empty div, vertical and horizontal cenetered.
     modal: {
       width: '100%',
       backgroundColor: '#000',
@@ -51,8 +47,6 @@ export default {
       },
     },
   
-    // Close button: default absolute positioning on top left of the
-    // browser window, white background square with a gray X.
     closeButton: {
       position: 'relative',
       top: -21,

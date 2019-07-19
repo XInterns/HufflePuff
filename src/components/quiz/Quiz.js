@@ -1,7 +1,6 @@
 import React from 'react';
 import {QuizData} from './QuizData';
 import './Quizpage.css';
-// import  from './timer';
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 

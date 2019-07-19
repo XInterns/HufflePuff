@@ -30,9 +30,7 @@ class ModalLauncher extends Component {
             >
             Sign In
             </NavLink>  
-            {showModal && !isLogged && <Modal onCloseRequest={() => this.handleToggleModal()}/>}
-            {/* {console.log("props"+ isLogged)} */}
-            
+            {showModal && !isLogged && <Modal onCloseRequest={() => this.handleToggleModal()}/>}          
             </div>  
 
         );

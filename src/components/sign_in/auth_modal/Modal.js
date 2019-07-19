@@ -65,7 +65,6 @@ class Modal extends Component {
                 onClick={onCloseRequest}
                 />
               <div className={classes.modalContent}>
-                {/* {children} */}
                 <Heading />
                 <Auth/>
               </div>

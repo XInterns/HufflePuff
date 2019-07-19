@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import {connect} from 'react-redux';
  
@@ -27,10 +26,6 @@ const ContestCard = (props) => {
     </label>
   );
 };
-
-// ContestCard.propTypes = {
-//   game: PropTypes.object.isRequired
-// };
 
 const mapStateToProps = (state) => {
   return{

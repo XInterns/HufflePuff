@@ -36,13 +36,11 @@ class Auth extends Component{
       <div className="Auth">
         {this.props.isSignedIn ? (
           <div>Signed In!!
-            <button onClick={firebase.auth().signOut}>Sign out!</button>
-            {/* TODO: send img as a prop*/}
-            {/* <img alt="profile-pic" src={firebase.auth().currentUser.photoURL}/> */}
+          <button onClick={firebase.auth().signOut}>Sign out!</button>
           </div>
         ):(
           <StyledFirebaseAuth
-           style = {{width: '50px'}}
+          //  style = {{width: '50px'}}
            uiConfig={this.uiConfig}
            firebaseAuth={firebase.auth()}
           />

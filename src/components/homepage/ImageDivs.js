@@ -2,7 +2,6 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import './ImageDivs.css';
 import { connect } from 'react-redux';
-import SignInModalLauncher from '../sign_in/SignInModalLauncher';
 
 const ImageDivs=(props) => {
     let classname= props.classname;
@@ -13,10 +12,6 @@ const ImageDivs=(props) => {
                 <NavLink className="border" to= {isLogged ? "/contests" : "/batsmen"}>
                   {props.imageText}
                 </NavLink> 
-                
-                {/* Make changes to open the Modal if user isn't logged in!! ) */}
-                {/* or else provide this option when we click on CRICKET!! */}
-                {/* or bring back to HOMEPAGE to signin */}
                
                {(classname==="pimg1") ? (
                     <div> </div>

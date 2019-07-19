@@ -7,7 +7,6 @@ const SignedOutLinks=()=> {
     return(
         <ul className="right">
             <NavLink to = "/signin"> Sign In </NavLink>
-            {/* <NavLink to='/' ><li><ModalLauncher/></li> </NavLink> */}
         </ul>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import PlayerCard from './PlayerCard';
-// import SelectPlayerNavbar from './SelectPlayerNavbar';
 import {connect} from 'react-redux';
 import './AddPlayers.css';
 

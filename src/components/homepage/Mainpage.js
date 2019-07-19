@@ -13,7 +13,7 @@ const Mainpage = (props) => {
     // console.log(isLogged);
     return (
         // <BrowserRouter>
-        <div>
+        <div class="mainpage">
             <ImageDivs classname= "pimg1" imageText="XPL XEBIA PREMIER LEAGUE"/>
             <Section  sectionId="cricket" 
                 heading="Cricket" 

@@ -1,6 +1,6 @@
 export default {
     '@global': {
-      'body': { overflowY: 'hidden' },
+      'body': { overflowY: 'scroll' },
     },
     
     modalOverlay: {

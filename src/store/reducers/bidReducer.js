@@ -13,7 +13,7 @@ const initState = {
 const bidReducer = (state = initState, action) => {
     switch (action.type) {
         case 'BID_PLACED':
-             console.log("action.payload: "+action.payload);
+            //  console.log("action.payload: "+action.payload);
             return {
                 ...state,
                 user: { ...state.user,

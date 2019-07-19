@@ -19,7 +19,6 @@ const poolReducer = (state = initState, action) => {
                 user: { ...state.user,
                 pools_selected: [...user.pools_selected.slice(0,action.index), action.payload]}
             };
-            //return {...state, user: [...state.user, obj]}  
         default: return state;
     }
 }   

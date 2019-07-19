@@ -14,12 +14,13 @@ class PlayerCard extends React.Component {
    toggleClass(player){
      const currentState = this.state.active;
      this.setState({active:!currentState});
-     console.log(this.props.userPlayer);
+    //  console.log(this.props.userPlayer);
     this.props.playerHandler(player);
    }
 
    render(){
-     const {playerform} = this.props;
+     const {playerform, userPools} = this.props;
+    //  console.log("userpools:"+userPools);
     return(
       <div className={this.state.active?"col s12 m6 pcard ":"col s12 m6 pcard selected"}>
       <div className="card cardContainer ">
@@ -48,6 +49,7 @@ class PlayerCard extends React.Component {
 const mapStateToProps = (state) => {
   return{
     userPlayer: state.player.user,
+    userPools: state.pool.user.pools_selected
   }
 };
 

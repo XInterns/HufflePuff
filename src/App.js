@@ -22,7 +22,6 @@ class App extends React.Component {
       <Navbar/>
         <Switch>
           <Route exact path='/' component={Mainpage} />
-          {/* <Route path='/signup' component={SignUp }/> */}
           <Route path='/batsmen' component={AddPlayers} />
           <Route path="/CricketPool1" component={pools} />
           <Route path="/contests" component={Contests} />

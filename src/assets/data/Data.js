@@ -99,7 +99,6 @@ export const players = [
     name: "KL Rahul",
     type:"batsman",
     credit:'10'  ,
-
     playerinfo:"A tall, elegant right-hand batsman who can keep wicket in a crisis, KL Rahul is among the most highly rated opening batsmen in India's next generation.",        
 
   },
@@ -110,7 +109,6 @@ export const players = [
     name: "Jasprit Bumrah",
     type:"bowler",
     credit:'10'  ,
-
     playerinfo:"Jasprit Bumrah grabbed eyeballs first with his unorthodox action, and then his bowling skills. ",    
   },
   {
@@ -120,7 +118,6 @@ export const players = [
     name: "Bhuvneshwar Kumar ",
     type:"bowler",
     credit:'10'  ,
-
     playerinfo:"Bhuvneshwar can make a ball hoop around corners, mostly back into the right-hand batsman but he gets it to hold its line often enough to be a genuine threat.",
 
   },
@@ -131,7 +128,6 @@ export const players = [
     name: "Shakib Al Hasan",
     type:"allrounder",
     credit:'10'  ,
-
     playerinfo:" His on-field performances and off-field professionalism set a benchmark that was followed by peers and juniors alike.",
 
     
@@ -153,7 +149,6 @@ export const players = [
     name: "Tamim Iqbal",
     type:"batsman",
     credit:'10'  ,
-
     playerinfo:"Tamim Iqbal was already one of Bangladesh's most assured batsmen at the time of his 21st birthday, and will be a vital component at the top of the order for years to come.",
 
     
@@ -165,7 +160,6 @@ export const players = [
     name: "Yuzvendra  Chahal",
     type:"bowler",
     credit:'10'  ,
-
     playerinfo:"Yuzvendra Chahal is an attacking legspinner who first attracted attention when he took 34 wickets in the National Under-19 Cooch Behar Trophy in 2009, ending the tournament as its leading wicket-taker.",
 
     
@@ -177,7 +171,6 @@ export const players = [
     name: "Mustafizur Rahman",
     type:"bowler",
     credit:'10'  ,
-
     playerinfo:"Mustafizur Rahman is a left-arm pace bowler who came to Dhaka to try out for a fast-bowling camp in 2012, after he had impressed in an Under-17 tournament in Satkhira, some 300km from Dhaka.",
 
   },
@@ -188,7 +181,6 @@ export const players = [
     name: "Mushfiqur Rahim",
     type:"wicketkeeper",
     credit:'10'  ,
-
     playerinfo:"A wild-card inclusion for Bangladesh's maiden tour of England in 2005, Mushfiqur Rahim was just 16 when he was selected for that daunting trip - two Tests in May, followed by six ODIs against England and Australia .",
 
     
@@ -202,8 +194,8 @@ export const user = {
     contests_selected : [],
     pools_selected : [],
     // user_score:{
-    //   quizEnd: false,
-    //   quizScore: 0,
-    //   totalScore: 100
+      // quizEnd: false,
+      // quizScore: 0,
+      // totalScore: 100
     // }
   }

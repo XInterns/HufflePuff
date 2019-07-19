@@ -26,12 +26,13 @@ class PlayerCard extends React.Component {
         <div className="card-image hvrbox">
         <img src={playerform.pic} className="hvrbox-layer_bottom"  ></img>
           <span className="card-title">{playerform.name}</span>
-          <div className="hvrbox-layer_top">         
+          <div className="hvrbox-layer_top"> 
+          <p>Player Credit :  {playerform.credit}</p>        
              <div className="hvrbox-text">{playerform.playerinfo}</div> 
           </div>          
              
           <button className="btn-floating halfway-fab waves-effect waves-light red" onClick={this.toggleClass.bind(this)}><i className="material-icons">add</i></button>
-          <p> Player credit: 11 pts</p>
+         
           <button className="btn-floating halfway-fab waves-effect waves-light red" onClick={() => this.toggleClass(playerform)}><i className="material-icons">add</i></button>
         </div>
         <div className="card-content">

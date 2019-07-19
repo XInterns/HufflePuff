@@ -8,6 +8,11 @@
     border-radius:25px;
 }
 
+.card-title{
+  position: absolute;
+  right:-23px;
+  border-radius:20px;
+}
 /* .tooltip {
     position: relative;
     display: inline-block;
@@ -60,6 +65,8 @@
       /* display: block; */
     }
     .hvrbox .hvrbox-layer_top {
+      display:flex;
+      justify-content: center;
       opacity: 0;
       position: absolute;
       top: 0;
@@ -75,6 +82,7 @@
       -webkit-transition: all 0.4s ease-in-out 0s;
       -ms-transition: all 0.4s ease-in-out 0s;
       transition: all 0.4s ease-in-out 0s;
+      border-radius:30px;
     }
     .hvrbox:hover .hvrbox-layer_top,
     .hvrbox.active .hvrbox-layer_top {
@@ -82,7 +90,7 @@
     }
     .hvrbox .hvrbox-text {
       text-align: center;
-      font-size: 10px;
+      font-size: 12px;
       display: inline-block;
       position: absolute;
       top: 50%;
@@ -90,7 +98,7 @@
       -moz-transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -20%);
     }
     /* .hvrbox .hvrbox-text_mobile {
       font-size: 15px;
@@ -103,3 +111,7 @@
     .hvrbox.active .hvrbox-text_mobile {
       display: block;
     } */
+
+    .selected{
+      border-radius:30px
+    }

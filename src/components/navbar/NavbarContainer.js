@@ -5,8 +5,10 @@ import SignedOutLinks from './SIgnedOutLinks';
 import { connect } from 'react-redux';
 import ModalLauncher from '../sign_in/SignInModalLauncher';
 import {NavLink} from 'react-router-dom';
+
 const Navbar=(props)=> {
-    const { isLogged } = props;
+    const { isLogged, userPlayers } = props;
+    // console.log(userPlayers.length);
     return(
         <nav className="nav-wrapper grey darken-3">
             
@@ -14,9 +16,17 @@ const Navbar=(props)=> {
                <li><Link to='/' className="brand-logo center">
                     XPL
                 </Link></li> 
-                { isLogged 
+                { isLogged
                 ? (
-               <li className="right"> <SignedInLinks/> </li>)
+                <div>
+                <li className="right"> <SignedInLinks/> </li>
+                {(userPlayers.length == 11) ? (
+                  <li><NavLink to = "/bid" className="right"> {console.log(userPlayers.length)}BID </NavLink></li>)
+                  : (
+                  <div/>
+                  )
+                }
+               </div>)
                 : (
                <div> 
                  <li className="right"> <ModalLauncher/></li>
@@ -32,7 +42,8 @@ const Navbar=(props)=> {
 
 const mapStateToProps = (state) => {
     return{
-      isLogged: state.auth.isLogged
+      isLogged: state.auth.isLogged,
+      userPlayers: state.player.user.players_selected,
     }
   };
 

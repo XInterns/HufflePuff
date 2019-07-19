@@ -1,5 +1,5 @@
 import authReducer from './authReducer';
-import teamReducer from './teamReducer';
+import bidReducer from './bidReducer';
 import poolReducer from './poolReducer';
 import {combineReducers} from 'redux';
 import playerReducer from './playerReducer';
@@ -9,7 +9,7 @@ import quizEndReducer from './quizEndReducer';
 
 const rootReducer = combineReducers({
     auth: authReducer,
-    team: teamReducer,
+    bid: bidReducer,
     pool: poolReducer,
     player: playerReducer,
     contest: contestReducer,

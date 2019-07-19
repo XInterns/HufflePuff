@@ -23,10 +23,10 @@ class SignedInLinks extends Component{
             <li><NavLink to="/quizStart" exact>Play Quiz</NavLink> </li>
             {/* <li><NavLink to="/" exact> Sign Out</NavLink> </li> */}
             {/* <li><NavLink to="/" exact>Sign Out</NavLink> </li> */}
-            <li><NavLink to="/bidplaced" >BID IT</NavLink> </li>
+            {/* <li><NavLink to="/bidplaced" >BID IT</NavLink> </li> */}
             {/* route/redirect on signout to homepage  */}
             <li> 
-              <NavLink activeStyle={{color:'orange'}} onClick={() => this.handleSignout()}> Sign Out</NavLink>
+              <NavLink to="" activeStyle={{color:'orange'}} onClick={() => this.handleSignout()}> Sign Out</NavLink>
             </li>
             <li>
             {/* <NavLink to="/" exact className="btn btn-floating pink lighten-1"> */}
@@ -44,7 +44,7 @@ class SignedInLinks extends Component{
 const mapStateToProps = (state) => {
     return{
       isSignedIn: state.auth.isLogged,
-      totalScore: state.quizEnd.totalScore
+      totalScore: state.quizEnd.user.user_score.totalScore
     }
   }
   

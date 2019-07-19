@@ -10,7 +10,7 @@ import SignInModalLauncher from './components/sign_in/SignInModalLauncher';
 import AdminPage from './components/admin/AdminPage';
 import QuizStart from './components/quiz/QuizStart';
 import total from './components/quiz/quiztest';
-// import Bid from './components/confirm bidding/bid'
+import Bid from './components/confirm bidding/bid'
 // import SignOutConfirmationModal from './components/navbar/SignOutConfirmationModal';
 
 class App extends React.Component {
@@ -27,6 +27,7 @@ class App extends React.Component {
           <Route path="/CricketPool1" component={pools} />
           <Route path="/contests" component={Contests} />
           <Route path="/instructions" component={Instructions}/>
+          <Route path="/bid" component={Bid}/>
           <Route path="/signin" component={SignInModalLauncher} />  
           <Route path="/contests" exact component={Contests} />
           {/* <Route path="/quiz" exact component={Quiz} /> */}

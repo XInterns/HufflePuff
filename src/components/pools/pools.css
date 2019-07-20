@@ -1,0 +1,88 @@
+.poolContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  height: 100%;
+  /* background-image: url(/src/assets/img/photo-1540747913346-19e32dc3e97e.jpeg) */
+  /* a background image needed */
+}
+div .header {
+  display: flex;
+  margin: 20px auto;
+  width: 95%;
+}
+.line1 {
+  background-color: #490f37;
+  width: 126%;
+  height: 5px;
+  margin: 28px 0px;
+}
+.entry {
+  display: flex;
+  font-size:30px;
+}
+.fa-hand-point-right {
+  color: green;
+  margin-top: 17px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.choosePool {
+  width: 68%;
+  height: 10%;
+  font-size: 30px;
+  padding: 11px 0px;
+  letter-spacing: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.pool_card {
+  height: 300px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  box-shadow: 5px 10px 8px #888888;
+
+  border-radius:20px;
+}
+
+div .pool_card:hover {
+  transform: scale(1.1);
+  transition-duration: 0.6s;
+}
+.join-pool-button {
+  background-color: #6c2a57;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  
+  padding: 7%;
+  margin: auto;
+  border-radius:5px;
+}
+.total-prize-pool,
+.pool-entry {
+  font-size: 18px;
+  font-weight: 100;
+  padding: 2px;
+  margin: 5px;
+}
+.total {
+  font-size: 50px;
+  font-weight: 800;
+  padding: 5px;
+}
+.pool-price {
+  font-size: 40px;
+  font-weight: 700;
+}
+.fa-coins {
+  color: yellow;
+  margin-left: 10px;
+}
+
+.chotaCoin {
+  margin-top: 17px;
+}
+

@@ -1,0 +1,157 @@
+.pimg1 {
+    background-image: url(../../assets/img/image1.png);
+    min-height: 100vh;
+}
+
+.pimg2 {
+    min-height: 400px;
+    background-image: url(../../assets/img/image2.jpg);
+    width:100%;
+}
+ 
+.pimg3 {
+    min-height: 400px;
+    background-image: url(../../assets/img/image3.jpg);
+    width:100%;
+}
+
+.pimg4 {
+    min-height: 400px;
+    background-image: url(../../assets/img/image4.jpg);
+}
+
+.pimg5 {
+    min-height: 400px;
+    background-image: url(../../assets/img/image1.png);
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position:relative;
+    opacity:0.70;
+   
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+   
+  }
+.mainpage{
+  background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height: 500px; 
+
+}
+.linkContainer {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 70%;
+    width:100%;
+}
+
+.sportLink {
+    background-color: #f44336;
+    color: white;
+    padding: 18px;
+    border-radius: 4px;
+    letter-spacing:8px;
+    font-weight: 900px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform:uppercase;
+}
+
+a:hover {
+    transform: scale(1.2);
+    transition-duration: .6s;
+}
+
+.border{
+    background-color:#6D2C60;
+    color:#fff;
+    border-radius: 4px;
+    padding:18px;
+  }
+
+  .text {
+    position:absolute;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:15px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-weight: 900px;
+  }
+
+  .ptextXPL {
+      top:34.5%;
+      font-size:20px;
+      font-weight: 1200px;
+  }
+  
+  .ptext{
+    top:70%;
+    /* left: 20%; */
+  }
+  
+.ptext .border .trans{
+    background-color:transparent;
+  }
+
+.imageDivs {
+    min-height: 40px;
+    position: relative;
+    opacity:.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 15.5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    letter-spacing: 3px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+ 
+  

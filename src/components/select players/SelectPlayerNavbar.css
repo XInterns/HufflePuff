@@ -1,0 +1,30 @@
+.navbar {
+    /* background-color:#6c2a57; */
+}
+
+.heading {
+    font-size: 30px;
+    margin: 190px;
+}
+.selectnav{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height:20px;
+
+}
+.ssn{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+     */
+
+}
+.nav-content{
+    display: flex;
+    justify-content: space-around;
+}
+nav .nav-wrapper{
+    display:flex;
+    align-items:center;
+}

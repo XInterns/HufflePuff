@@ -1,0 +1,39 @@
+body , html {
+    height: "100%";
+    margin:0;
+    font-size:"16px";
+    font-family:"Lato, sans-serif";
+    font-weight:"400";
+    line-height:"1.8em";
+    color:"#666";
+    min-height:100%;
+    min-width: 100%;
+    background-image: url('./img/image1.png');
+    overflow-y: scroll;
+    
+}
+
+form {
+    padding:20px;
+    margin-top:60px;
+    background: transparent;
+}
+
+form button, form h5 {
+    margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label{
+color: #ec407a !important;
+}

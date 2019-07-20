@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+
+
+.Quizapp {
+    /* font-family: sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    color: rgb(10, 10, 10);
+  }
+  body {
+    overflow: scroll;
+  }
+
+  
+  .options {
+    cursor: pointer;
+    border: 2px solid #6C2A57;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+  
+  .selected {
+    background: linear-gradient(to right, #74ebd5, #acb6e5) !important;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  .ques-display
+  {
+    font-size: 3rem;
+    height: 30%;
+  }
+  .result
+  {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ques-num
+  {
+    font-size: 2rem;
+    padding: 0%;
+  }
+
+  .endmessage{
+    color: black;
+  }
+  
+.options {
+  background-color: #6C2A57;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-bottom: 10px solid white ;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
